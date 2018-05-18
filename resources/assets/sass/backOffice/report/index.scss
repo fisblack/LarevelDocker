@@ -1,0 +1,150 @@
+.page-backoffice-report{
+
+	padding-top:30px;
+}
+.page-backoffice-report .box-header-white {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.page-backoffice-report .box-header-white .header-left {
+    display: inline-block;
+    float: left;
+    line-height: 61px;
+    padding-left: 20px;
+}
+.page-backoffice-report .box-header-white .header-left figure {
+    display: inline-block;
+	margin-right: 15px;
+}
+.page-backoffice-report .box-header-white .header-left .title {
+    color: #666;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+}
+.page-backoffice-report .box-header-white .header-left .title.active {
+    color: #000;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+}
+.page-backoffice-report .box-result {
+    background: #fff;
+    padding: 40px;
+}
+.page-backoffice-report .box-result .col-center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    background: #fefefe;
+    border: 1px solid #e5e5e5;
+	border-radius:4px;
+}
+.page-backoffice-report .box-result .col-center .form-bankacc{
+	font-family: 'Kanit', sans-serif;
+}
+
+.page-backoffice-report .box-result .col-center .form-bankacc .control-label{
+	text-align: left;
+
+}
+.page-backoffice-report .box-result .col-center .form-bankacc .label-time{
+	text-align:center;
+	    margin-top: 8px;
+}
+.page-backoffice-report .box-result .col-center .form-bankacc .form-control{
+	    border-radius: 4px;
+}
+.dd-select{
+border-radius: 4px !important;
+}
+.page-backoffice-report .box-result .col-center .form-bankacc .btn{
+	cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: none;
+    border: none;
+    vertical-align: baseline;
+    background: #E0E1E2 none;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    margin: 0em 0.25em 0em 0em;
+    padding: 0.78571429em 1.5em 0.78571429em;
+    text-transform: none;
+    text-shadow: none;
+    font-weight: bold;
+    line-height: 1em;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.28571429rem;
+    box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+    transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+    will-change: '';
+    -webkit-tap-highlight-color: transparent;
+}
+.page-backoffice-report .box-result .col-center .form-bankacc .btn-save{
+	text-transform: capitalize;
+	background-color: #DB2828;
+    color: #FFFFFF;
+    text-shadow: none;
+    background-image: none;
+}
+.page-backoffice-report .box-result .col-center .form-bankacc .btn-save:hover{
+    background-color: #d01919;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+.page-backoffice-report .box-result .col-center .form-bankacc .btn-cancel{
+	text-transform: capitalize;
+	background-color: #1B1C1D;
+    color: #FFFFFF;
+    text-shadow: none;
+    background-image: none;
+}
+.page-backoffice-report .box-result .col-center .form-bankacc .btn-cancel:hover{
+	background-color: #2f3032;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+
+
+.page-backoffice-report .box-result .col-center .form-bankacc #bankacc .dd-selected-image{
+    width: 22px;
+}
+.page-backoffice-report .box-result .col-center .form-bankacc #bankacc .dd-option-image{
+    width: 22px;
+}
+.page-backoffice-report .box-result .col-center .form-bankacc #bankacc .dd-desc{
+    margin-top: 3px;
+    color: #666;
+}
+@media( max-width: 767px ){
+	.page-backoffice-report .box-result .col-center .form-bankacc .label-time{
+		text-align:left;
+	}
+}
+
+@media( max-width: 600px ){
+	.page-backoffice-report .box-result{
+	    padding: 20px;
+	}
+}
+
+@media( max-width: 425px ){
+	.page-backoffice-report .box-result .col-center .form-bankacc .btn-save{
+		display: block;
+		width: 100%;
+		margin-bottom: 8px;
+	}
+	.page-backoffice-report .box-result .col-center .form-bankacc .btn-cancel{
+		display: block;
+		width: 100%;
+	}
+}

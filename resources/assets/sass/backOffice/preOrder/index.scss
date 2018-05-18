@@ -1,0 +1,306 @@
+@import "../scanPO/index.scss";
+@mixin background-gradient() {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,fbfbfc+49,f7f7f7+100 */
+    background: rgb(255, 255, 255);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 252, 1) 49%, rgba(247, 247, 247, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 252, 1) 49%, rgba(247, 247, 247, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 252, 1) 49%, rgba(247, 247, 247, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* IE6-9 */
+}
+
+@mixin background-gradien-grey() {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dfdfdf+0,dbdbdb+50,d7d7d6+100 */
+    background: rgb(223, 223, 223);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(223, 223, 223, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(215, 215, 214, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(223, 223, 223, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(215, 215, 214, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(223, 223, 223, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(215, 215, 214, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+
+/* ======================================== */
+
+.records {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    &__item {
+        width: 100%;
+        display: table;
+        border-radius: 3px 0 0 3px;
+        border: 1px solid #d0d0d0;
+        border-top: 0;
+        height: 95px;
+        @include background-gradient();
+        &:first-child {
+            border-top: 1px solid #d0d0d0;
+        }
+        >div {
+            display: table-cell;
+            height: 100%;
+            vertical-align: middle;
+            border-left: 1px solid #e4e4e4;
+            &:first-child {
+                border-left: 0;
+            }
+        }
+        //soft delete
+        &--delete {
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                @include background-gradien-grey();
+                z-index: 1;
+                opacity: .75;
+            }
+            .records {
+                &__check {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                &__detail {
+                    border-left: 0 !important;
+                    color: #000000 !important;
+                    .order__detail {
+                        span {
+                            color: #000000;
+                        }
+                        div {
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+                &__action {
+                    &-left {
+                        .edit,
+                        .delete {
+                            opacity: 0;
+                        }
+                    }
+                    &-right {
+                        border-top: 0;
+                        .print {
+                            display: none;
+                        }
+                        .refresh {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            .status {
+                &__badge {
+                    color: #ffffff !important;
+                    &--success {
+                        background-color: #666666 !important;
+                    }
+                    &--warning {
+                        background-color: #666666 !important;
+                    }
+                    &--danger {
+                        background-color: #666666 !important;
+                    }
+                }
+            }
+        }
+    }
+    &__check {
+        text-align: center;
+        padding: 0 15px;
+        width: 20px;
+    }
+    &__detail {
+        min-width: 240px;
+        .img {
+            display: inline-block;
+            overflow: hidden;
+            margin: 0 15px;
+            height: 100%;
+            vertical-align: top;
+            img {
+                margin-top: 10px;
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+            }
+        }
+        .order {
+            display: inline-block;
+            width: calc(100% - 78px);
+            &__detail {
+                padding: 3px 0 0;
+                span {
+                    font-weight: 400;
+                    color: $ci_red;
+                }
+            }
+            &__tag {
+                >div {
+                    span {
+                        display: block;
+                    }
+                }
+            }
+            &__id {
+                display: inline-block;
+                width: 200px;
+                font-weight: 400;
+                font-size: 110%;
+            }
+            &__date {
+                display: inline-block;
+                width: 200px;
+            }
+            &__name {
+                display: block;
+                width: 200px;
+            }
+        }
+    }
+    &__action {
+        position: relative;
+        width: 150px;
+        border-left: 0 !important;
+        &-left {
+            display: block;
+            float: left;
+            width: 50px;
+        }
+        &-right {
+            display: block;
+            float: left;
+            width: 100px;
+            height: 100%;
+            vertical-align: middle;
+            text-align: center;
+            line-height: 95px;
+            border-left: 1px solid #d0d0d0;
+        }
+        a,
+        button {
+            border: 0;
+            background-color: transparent;
+        }
+        .edit,
+        .delete {
+            display: block;
+            width: 30px;
+            height: 30px;
+            padding: 2px;
+            margin: 10px;
+            background-color: transparent;
+            border: 1px solid #e4e4e4;
+            &:hover {
+                background-color: #ffffff;
+            }
+        }
+        .refresh {
+            display: none;
+            z-index: 2;
+            position: relative;
+        }
+    }
+}
+
+.status {
+    display: inline-block;
+    padding-right: 15px;
+    color: #c8c8c8;
+    &__name {
+        font-size: 90%;
+    }
+    &__badge {
+        font-size: 90%;
+        color: #ffffff;
+        background-color: #c8c8c8;
+        display: block;
+        padding: 3px;
+        text-align: center;
+        border-radius: 3px;
+        margin-bottom: 3px;
+        width: 110px;
+        &--success {
+            background-color: #0f9b0f;
+        }
+        &--warning {
+            background-color: #cac531;
+        }
+        &--danger {
+            background-color: #9b100f;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .records {
+        &__action {
+            width: 100px;
+            &-left {}
+            &-right {
+                width: 50px;
+                img {
+                    width: 30px;
+                }
+            }
+        }
+    }
+    .order {
+        padding: 7px 0;
+    }
+}
+
+@media (max-width: 479px) {
+    .records {
+        &__item--delete {
+            .records__action-right .refresh {
+                top: -50px;
+            }
+        }
+        &__detail {
+            min-width: 100px;
+            .order {
+                padding: 7px 10px;
+                // &__id,
+                // &__date,
+                // &__name {
+                //     width: auto;
+                // }
+            }
+        }
+        &__action {
+            width: 50px;
+            &-left {
+                border-left: 1px solid #d0d0d0;
+            }
+            &-right {
+                width: 100%;
+                line-height: 125px;
+                border-top: 1px solid #d0d0d0;
+                height: auto;
+                .refresh {
+                    img {
+                        width: 30px;
+                    }
+                }
+                .print {
+                    img {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

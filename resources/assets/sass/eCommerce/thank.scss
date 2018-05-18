@@ -1,0 +1,156 @@
+.page_thank {
+    padding: 50px 0;
+}
+.bg-thank {
+    background: url('../../images/11_thank/bg-thank.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.page_thank .header-title {
+    text-align: center;
+}
+.page_thank .header-title figure img {
+    margin-bottom: 14px;
+}
+.page_thank .header-title-text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-family: 'quarkbold';
+    color: #ad1d42;
+    text-align: center;
+}
+.page_thank .thank-detail {
+    background: #fff;
+    width: 329px;
+    min-width: 329px;
+    // height: 417px;
+    padding: 25px 15px;
+    margin-bottom: 25px;
+    border: 1px solid #eee;
+	
+}
+.page_thank .thank-detail .list-detail-item {
+    font-family: 'quarkbold';
+}
+.page_thank .thank-detail .list-detail-item .list-itme > .table {
+    margin-bottom: 15px;
+}
+.page_thank .thank-detail .list-detail-item .list-itme .table>tbody>tr>td {
+    text-align: left;
+    border: none;
+    font-family: 'quarkbold';
+    font-size: 16px;
+}
+.page_thank .thank-detail .list-detail-item .list-itme .table>tbody>tr>td.title {} .page_thank .thank-detail .list-detail-item .list-itme .table>tbody>tr>td.qty {
+    min-width: 50px;
+}
+.page_thank .thank-detail .date-order {
+    text-align: right;
+    padding-top: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.page_thank .thank-detail .date-time {
+    text-align: right;
+    padding-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.page_thank .thank-detail .list-detail-item {
+    padding-top: 30px;
+}
+.page_thank .thank-detail .list-detail-item {} .page_thank .thank-detail .list-itme {
+    border-bottom: 1px dashed;
+}
+.page_thank .thank-detail .delivery {
+    padding-top: 30px;
+}
+.page_thank .thank-detail .delivery .delivery-text {
+    text-align: left;
+    display: block;
+    font-family: 'quarkbold';
+    font-size: 20px;
+}
+.page_thank .thank-detail .delivery .delivery-date {
+    text-align: left;
+    font-size: 16px;
+}
+.page_thank .thank-detail .summary {
+    padding-top: 30px;
+}
+.page_thank .thank-detail .summary .total-text {
+    text-align: left;
+    display: block;
+    font-family: 'quarkbold';
+    font-size: 20px;
+}
+.page_thank .thank-detail .summary .point-text {
+    font-size: 16px;
+    color: #a71a3c;
+}
+.page_thank .thank-detail .summary .total {
+    text-align: right;
+    display: block;
+    font-family: 'quarkbold';
+    font-size: 20px;
+}
+.page_thank .thank-detail .summary .point {
+    text-align: right;
+    font-size: 16px;
+    color: #a71a3c;
+}
+.page_thank .bottom-title-text {
+    margin-top: 25px;
+    font-family: 'quarkbold';
+    text-align: center;
+	width: 329px;
+    min-width: 329px;
+    margin: 0 auto;
+}
+.page_thank .bottom-title-text>.btn-print {
+    letter-spacing: 1px;
+    border-radius: 7px;
+    background: #fff;
+	color:#fff;
+    border: none;
+    font-size: 17px;
+	border-radius: 20px;
+	-webkit-box-shadow: 10px 0 5px -2px #888;
+    box-shadow: 1px 2px 5px 1px #c1b2b2;
+	float: right;
+	width: 100px;
+	background: #ad1b3f;
+}
+.page_thank .bottom-title-text>.btn-back {
+    letter-spacing: 1px;
+    border-radius: 7px;
+    background: #fff;
+	color:#000;
+    border: none;
+    font-size: 17px;
+	border-radius: 20px;
+	-webkit-box-shadow: 10px 0 5px -2px #888;
+    box-shadow: 1px 2px 5px 1px #c1b2b2;
+	float: left;
+	width: 100px;
+}
+@media( max-width: 767px) {
+    .bg-thank {
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0;
+    }
+    .page_thank .thank-detail {
+		width: 100%;
+		min-width: 100%;
+		border: none;
+		box-shadow: none;
+    }
+    .page_thank .bottom-title-text {
+        margin: 0 0 15px 0;
+    }
+	.page_thank .header-title{
+		margin-top:25px;
+	}
+}

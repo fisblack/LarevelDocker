@@ -1,0 +1,446 @@
+/** 
+ * @author: ระบุชื่อ-นามสกุลของคุณที่นี่
+ * @phone: ระบุหมายเลขโทรศัพท์ของคุณที่นี่
+ * @email: ระบุอีเมลของคุณที่นี่
+ */
+
+//mixin
+@mixin box-shadow($shadow: 0px 2px 5px rgba(0, 0, 0, 0.4)) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin transition($args: all .3s linear) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin background-gradient() {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,fbfbfc+49,f7f7f7+100 */
+    background: rgb(255, 255, 255);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 252, 1) 49%, rgba(247, 247, 247, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 252, 1) 49%, rgba(247, 247, 247, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 252, 1) 49%, rgba(247, 247, 247, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* IE6-9 */
+}
+
+@mixin background-gradient-grey() {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dfdfdf+0,dbdbdb+50,d7d7d6+100 */
+    background: rgb(223, 223, 223);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(223, 223, 223, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(215, 215, 214, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(223, 223, 223, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(215, 215, 214, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(223, 223, 223, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(215, 215, 214, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+//variables
+$ci_red: #9f1211;
+$ci_grey: #8e8e8e;
+$border-color: #e5e5e5;
+$input-border-color: #a1a1a1;
+$panel-block-bg: #fefefe;
+$btn-primary-color: #ffffff;
+$btn-primary-bg: #DB2828;
+$btn-secondary-color: #ffffff;
+$btn-secondary-bg: #1B1C1D;
+
+/* ======================================== */
+
+//Typography
+h4,
+h5 {
+    font-family: 'Kanit', sans-serif;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.panel {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+}
+
+
+/* ======================================== */
+
+//utility
+.bg-white {
+    background-color: #ffffff !important;
+}
+
+.m-auto {
+    margin: auto !important;
+    float: none;
+}
+
+.text-grey {
+    color: $ci_grey !important;
+}
+
+.text-red {
+    color: $ci_red !important;
+}
+
+.text-bold {
+    font-weight: 500 !important;
+}
+
+.gradient {
+    @include background-gradient();
+}
+
+.mt {
+    &-1 {
+        margin-top: 10px !important;
+    }
+    &-2 {
+        margin-top: 20px !important;
+    }
+    &-3 {
+        margin-top: 30px !important;
+    }
+}
+
+.mb {
+    &-1 {
+        margin-bottom: 10px !important;
+    }
+    &-2 {
+        margin-bottom: 20px !important;
+    }
+    &-3 {
+        margin-bottom: 30px !important;
+    }
+}
+
+.ml {
+    &-1 {
+        margin-left: 10px !important;
+    }
+    &-2 {
+        margin-left: 20px !important;
+    }
+    &-3 {
+        margin-left: 30px !important;
+    }
+}
+
+.mr {
+    &-1 {
+        margin-right: 10px !important;
+    }
+    &-2 {
+        margin-right: 20px !important;
+    }
+    &-3 {
+        margin-right: 30px !important;
+    }
+}
+
+.my {
+    &-1 {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    &-2 {
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    &-3 {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+    }
+}
+
+.mx {
+    &-1 {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+    &-2 {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+    &-3 {
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+    }
+}
+
+
+/* ======================================== */
+
+//components
+.btn {
+    border: 0;
+    border-radius: 5px;
+    @include transition();
+    &:hover {
+        border: 0;
+    }
+    &-primary {
+        color: $btn-primary-color;
+        background-color: $btn-primary-bg;
+        &:hover {
+            background-color: #d01919;
+        }
+    }
+    &-secondary {
+        color: $btn-secondary-color;
+        background-color: $btn-secondary-bg;
+        &:hover {
+            background-color: #27292a;
+            color: #ffffff;
+        }
+    }
+    &-sm {
+        min-width: 70px;
+    }
+    &-md {
+        min-width: 90px;
+    }
+    &-lg {
+        min-width: 110px;
+    }
+}
+
+//pagination
+.pagination {
+    margin: 0;
+    font-weight: 400;
+    >li {
+        &.active {
+            a,
+            a:hover {
+                background-color: $ci_red;
+                border-color: $ci_red;
+            }
+        }
+        a {}
+    }
+}
+
+//bloc
+.panel {
+    &-default {
+        @include box-shadow();
+        margin-top: 30px;
+        h4 {
+            img {
+                padding-right: 15px;
+            }
+        }
+    }
+    &-heading {
+        border-bottom: 1px solid #d0cfcf;
+        h4 {
+            span {
+                color: #d0cfcf;
+            }
+        }
+        &--action {
+            padding: 0 !important;
+            h4 {
+                float: left;
+                padding: 20px 25px;
+                margin: 0;
+            }
+        }
+        &__search {
+            float: right;
+            display: inline-block;
+            padding: 20px;
+            max-width: 300px;
+            input {
+                background-color: transparent;
+                border-right: 0;
+                border-radius: 3px 0 0 3px;
+                height: 35px;
+                font-weight: 300;
+                border-right: 0 !important;
+                &:focus {
+                    border: 1px solid #d0cfcf;
+                }
+            }
+            button {
+                height: 100%;
+                border: 0;
+                background-color: transparent;
+                padding: 0 10px;
+                cursor: pointer;
+                line-height: 0px;
+            }
+            .input-group-addon {
+                background-color: transparent;
+                border-left: 0;
+                border-radius: 0 3px 3px 0;
+                padding: 0;
+                border: 1px solid #d0cfcf;
+                border-left: 0 !important;
+                i {
+                    &:before {
+                        color: #d0cfcf;
+                    }
+                }
+            }
+        }
+        &__add {
+            float: right;
+            display: inline-block;
+            border-left: 1px solid #d0cfcf;
+            a {
+                display: block;
+                padding: 21px 0;
+                width: 85px;
+                text-align: center;
+            }
+        }
+        &__delete {
+            float: right;
+            display: inline-block;
+            border-left: 1px solid #d0cfcf;
+            a {
+                display: block;
+                padding: 21px 0;
+                width: 85px;
+                text-align: center;
+            }
+        }
+        &__order {
+            display: inline-block;
+            padding: 28px 20px;
+            background-color: #d7d7d7;
+            border-left: 1px solid #b2b1b1;
+            min-width: 220px;
+            text-align: center;
+        }
+    }
+    & &-body {
+        padding: 30px;
+        &__block {
+            background-color: $panel-block-bg;
+            border: 1px solid $border-color;
+            border-radius: 3px;
+            width: 100%;
+            padding: 40px 50px 35px;
+            margin: 25px 0;
+        }
+        .form-control {
+            max-width: 95%;
+            border-radius: 3px;
+            &--addon {
+                max-width: 100%;
+                border-radius: 3px 0 0 3px;
+            }
+        }
+        .address {
+            max-width: 95%;
+        }
+        .datetime {
+            max-width: 95%;
+        }
+        .product {
+            max-width: 97%;
+        }
+    }
+    &-footer {
+        .total {
+            padding: 10px 0 0;
+            font-weight: 400;
+            color: #7d7d7d;
+        }
+    }
+}
+
+//form
+fieldset {
+    &.inline {
+        display: inline-block;
+    }
+    &:last-child {
+        button {
+            margin-top: 20px;
+        }
+    }
+}
+
+.form-group {
+    &--inline {
+        margin-bottom: 15px;
+        .control-label {
+            display: inline-block;
+            width: 80px;
+        }
+        .form-control {
+            display: inline-block;
+            width: calc(100% - 86px);
+        }
+    }
+    .form-control {
+        border: 1px solid $input-border-color;
+        border-radius: 3px;
+    }
+}
+
+.label-inline {
+    padding: 5px 0;
+}
+
+@media (max-width: 767px) {
+    .panel {
+        &-heading {
+            &__search {
+                display: block;
+                width: 100%;
+                text-align: center;
+                border-top: 1px solid #d0cfcf;
+                max-width: none;
+            }
+        }
+        &-footer {
+            .text-right {
+                text-align: left !important;
+            }
+        }
+    }
+    .form-group {
+        &--inline {
+            .control-label {
+                width: 100%;
+            }
+            .form-control {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .panel {
+        & &-heading {
+            padding: 10px 15px;
+            &__search {}
+            &__add a,
+            &__delete a {
+                width: 45px;
+            }
+        }
+        & &-body {
+            padding: 0 15px;
+            &__block {
+                padding: 15px;
+                margin: 15px 0;
+            }
+        }
+    }
+}

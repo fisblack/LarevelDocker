@@ -1,0 +1,424 @@
+.btn-red {
+  background-color: #cd1c22!important;
+    color: white;
+
+}
+.btn-red:hover {
+  background-color: #d82b2f!important;
+    color: white;
+
+}
+
+.btn-black {
+  background-color: #3d3e40!important;
+  color: white;
+
+}
+.btn-black:hover {
+  background-color: #1b1c1e!important;
+  color: white;
+
+}
+.btn-red {
+  background-color: #a62221;
+  color: #fff;
+  margin-right: 10px;
+  margin-bottom: 20px;
+    width: 110px;
+    -webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;
+}
+
+.btn-black {
+  background-color: #000;
+  color: #fff;
+  margin-left: 10px;
+  margin-bottom: 20px;
+     width: 110px;
+     -webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;
+}
+
+.content .calendar {
+  float: right;
+  border-left: 1px solid #a1a1a1;
+  padding-left: 10px;
+  margin-top: -37px;
+  padding-right: 10px;
+  line-height: 38px;
+}
+
+.content .calendar i {
+  font-size: 20px;
+}
+
+.content .data {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: 'Kanit', sans-serif;
+  margin-top: 0;
+  margin-bottom: 30px;
+    margin-left: 6px;
+}
+
+.container-back {
+  padding: 5px 5px;
+}
+
+.order {
+  font-family: "Kanit" !important;
+  letter-spacing: 0px;
+}
+.order textarea,.order input{
+    color: #ccc;
+}
+.order input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #ccc;
+}
+.order input::-moz-placeholder { /* Firefox 19+ */
+     color: #ccc;
+}
+.order input:-ms-input-placeholder { /* IE 10+ */
+     color: #ccc;
+}
+.order input:-moz-placeholder { /* Firefox 18- */
+      color: #ccc;
+}
+.order .box-product .code {
+  padding: 20px 10px;
+  border-top: 1px solid #ddd !important;
+}
+
+.order .box-product .code .btn {
+  background-color: #a62221;
+  color: #fff;
+}
+
+.order .box-product .line {
+  border-top: 1px solid #ddd !important;
+}
+
+.order .box-product .summary {
+  text-align: right;
+  display: inline-block;
+  width: 100%;
+  line-height: 39px;
+  font-size: 16px;
+}
+
+.order .box-product .summary .parent-total {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.order .box-product .summary .price {
+  text-align: right;
+}
+
+.order .box-product .summary .net {
+  padding-top: 5px;
+}
+
+.order .box-product .summary .total {
+  padding: 0;
+}
+
+.order .box-product .header {
+  height: 30px;
+  display: inline-block;
+  width: 100%;
+  font-family: 'Kanit', sans-serif;
+  line-height: 30px;
+  padding-left: 10px;
+  color: #000;
+  border-bottom: 1px solid #ddd !important;
+}
+
+.order .box-product .body {
+  height: 245px;
+  overflow-y: scroll;
+}
+
+.order .box-product .body ul {
+  margin: 0;
+  padding: 0;
+}
+
+.order .box-product .body ul li {
+  margin: 0;
+  padding: 0;
+  padding: 15px;
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+  display: inline-block;
+  width: 100%;
+}
+
+.order .box-product .body ul li .cover {
+  display: inline-block;
+  float: left;
+  border: 1px solid #ccc;
+}
+
+.order .box-product .body ul li .data {
+  font-size: 15px;
+  line-height: 23px;
+  display: inline-block;
+  float: left;
+  margin-bottom: 0;
+  padding-right: 0px;
+  padding-left: 15px;
+  font-weight: normal;
+  color: #000;
+}
+
+.order .box-product .body ul li .data .count {
+  color: #000;
+  font-size: 11px;
+}
+
+.order .box-product .body ul li .data .point {
+  color: #ccc;
+  font-size: 13px;
+}
+
+.order .box-product .body ul li .price {
+  text-align: center;
+  font-size: 14px;
+  display: inline-block;
+  float: right;
+  padding-right: 0px;
+  padding-top: 5px;
+}
+
+.order .box-product .body ul li .price .red {
+  font-size: 20px;
+  color: #a62221;
+}
+
+.order .form-horizontal .control-label {
+  text-align: left !important;
+    color: #000;
+}
+
+.order .box-p-h {
+  display: inline-block;
+  width: 100%;
+}
+
+.order .box-p {
+  padding-top: 15px;
+  width: 110px;
+  height: 110px;
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.order .box-p .txt {
+  line-height: 20px;
+  padding-top: 10px;
+}
+
+.order .box-p .big {
+  padding-top: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+.order .box-p.opacity {
+  border: 1px solid #ddd !important;
+}
+
+.order .box-p.opacity img {
+  opacity: 0.3;
+}
+
+.order .box-p.opacity .txt {
+  color: #ddd;
+}
+
+.order .box-p.opacity .big {
+  color: #ddd;
+}
+
+.order .box-pay {
+  padding: 10px;
+  display: inline-block;
+}
+
+.order .box-pay .add-p {
+  line-height: 75px;
+  border: 1px dashed #a1a1a1;
+}
+
+.order .box-c {
+  min-height: 90px;
+}
+
+.order .box-c .add {
+  line-height: 60px;
+}
+
+.order .txt-center {
+  text-align: center;
+}
+
+.order .txt-black {
+  color: #000;
+}
+
+.order .c-padding {
+  padding: 15px 25px;
+}
+
+.order .bg {
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+}
+
+.order .shadow {
+  -webkit-box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.55);
+}
+
+.order .border {
+  border: 1px solid #d0cfcf;
+}
+
+.order .radius {
+   -webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;
+}
+
+.order .float-left {
+  float: left;
+  display: inline-block;
+}
+
+.order .float-right {
+  float: right;
+}
+
+.order .underline {
+  border-bottom: 1px solid #d0cfcf;
+}
+
+.order .header {
+  height: 80px;
+  display: inline-block;
+  width: 100%;
+}
+
+.order .header .btn-action {
+  width: 80px;
+  display: inline-block;
+  line-height: 80px;
+  text-align: center;
+}
+
+.order .header .order-id {
+  font-family: "Kanit" !important;
+  height: 80px;
+  display: inline-block;
+  line-height: 80px;
+  background-color: #d7d7d7;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #000;
+  border-left: 1px solid #d0cfcf;
+}
+
+.order .header .order-id span {
+  color: #a62221;
+}
+
+.order .content {
+  padding: 30px;
+  display: inline-block;
+  width: 100%;
+}
+
+.order .border-left {
+  border-left: 1px solid #d0cfcf;
+}
+
+.order .page-name .icon {
+  padding-left: 25px;
+  line-height: 80px;
+}
+
+.order .page-name .txt {
+  color: #333;
+  font-family: "Kanit" !important;
+}
+
+.order .page-name .txt span {
+  color: #000;
+}
+
+.order .page-name .text {
+  padding-left: 10px;
+  line-height: 80px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.border2 {
+  border: 1px solid #a1a1a1;
+}
+
+.gradient {
+  background: rgba(255, 255, 255, 0);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #f7f7f7));
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f7f7f7));
+  background: linear-gradient(to bottom, white 0%, #f7f7f7 100%);
+}
+
+.clear {
+  clear: both;
+}
+
+@media (min-width: 0px) {
+  .container-back {
+    padding: 10px 10px;
+  }
+}
+
+@media (min-width: 320px) {
+  .container-back {
+    padding: 10px 10px;
+  }
+}
+
+@media (min-width: 475px) {
+  .container-back {
+    padding: 10px 10px;
+  }
+}
+
+@media (min-width: 755px) {
+  .container-back {
+    padding: 10px 10px;
+  }
+}
+
+@media (min-width: 625px) {
+  .container-back {
+    padding: 25px 25px;
+  }
+}
+
+@media (min-width: 320px) {
+  .padding {
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .padding {
+    padding-right: 100px;
+  }
+}

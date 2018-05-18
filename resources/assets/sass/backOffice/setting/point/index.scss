@@ -1,0 +1,195 @@
+.page-backoffice-points {
+	padding-top:30px;
+}
+.page-backoffice-points .box-header-white {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.page-backoffice-points .box-header-white .header-left {
+    display: inline-block;
+    float: left;
+    line-height: 61px;
+    padding-left: 20px;
+}
+.page-backoffice-points .box-header-white .header-left figure {
+    display: inline-block;
+	    margin-right: 15px;
+}
+.page-backoffice-points .box-header-white .header-left .title{
+    color: #666;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+}
+.page-backoffice-points .box-header-white .header-left figure img {} .page-backoffice-bankacc .box-header-white .header-left .title {
+    color: #333;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+}
+.page-backoffice-points .box-header-white .header-right {
+    display: inline-block;
+    float: right;
+}
+.page-backoffice-points .box-header-white .header-right .app-search .form-control {
+    border: 1px solid #ccc;
+    color: #ccc;
+	border-radius: 4px;
+}
+.page-backoffice-points .box-header-white .header-right .app-search .form-control:focus {
+    border: 1px solid #ccc;
+    color: #ccc;
+}
+.page-backoffice-points .box-header-white .header-right .app-search a {
+    color: #ccc;
+}
+.page-backoffice-points .box-header-white .header-right ul li.add {
+    border-left: 1px solid #ccc
+}
+.page-backoffice-points .box-header-white .header-right ul li.add a {
+    padding: 0 20px;
+}
+.page-backoffice-points .box-header-white .header-right ul li.add a img {
+    width: 25px;
+}
+.page-backoffice-points .box-header-white .header-right ul li.del {
+    border-left: 1px solid #ccc
+}
+.page-backoffice-points .box-header-white .header-right ul li.del a {
+    padding: 0 20px;
+}
+.page-backoffice-points .box-header-white .header-right ul li.del a img {
+    width: 25px;
+}
+.page-backoffice-points .box-result {
+    background: #fff;
+    padding: 8px;
+}
+
+
+.page-backoffice-points .box-result table tbody>tr>td.first {
+    width: 5%;
+    text-align: center;
+    vertical-align: middle;
+}
+.page-backoffice-points .box-result table tbody>tr>td.first input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+}
+.page-backoffice-points .box-result table tbody>tr>td.second {
+    width: 91%;
+	vertical-align:middle;
+}
+
+.page-backoffice-points .box-result table tbody>tr>td.second ul {
+    display: inline-block;
+    margin: 0px;
+	line-height:25px;
+}
+.page-backoffice-points .box-result table tbody>tr>td.second ul li:first-child strong {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    color: #a62221;
+}
+.page-backoffice-points .box-result table tbody>tr>td.second ul li:first-child span {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    color: #000000;
+}
+.page-backoffice-points .box-result table tbody>tr>td.second ul li strong {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    color: #a62221;
+}
+.page-backoffice-points .box-result table tbody>tr>td.second ul li span {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    color: #000000;
+}
+
+.page-backoffice-points .box-result table tbody>tr>td.three ul {
+    margin: 0;
+}
+.page-backoffice-points .box-result table tbody>tr>td.three ul li:first-child {
+    margin-bottom: 2px;
+}
+.page-backoffice-points .box-result table tbody>tr>td.three ul li {
+    text-align: center;
+	margin: 8px 0px;
+}
+.page-backoffice-points .box-result table tbody>tr>td.three ul li a {
+    display: inline-block;
+    padding: 2px;
+    background-color: transparent;
+    border: 1px solid #e4e4e4;
+}
+.page-backoffice-points .box-result table tbody>tr>td.three ul li a img {
+    width: 20px
+}
+.page-backoffice-points .box-result .pagination-detail p {
+    line-height: 33px;
+    margin: 0;
+	    font-family: 'Kanit', sans-serif;
+}
+.page-backoffice-points .box-result .pagination-detail .right {
+    text-align: right;
+}
+.page-backoffice-points .box-result .pagination-detail .right ul {
+    margin: 0;
+}
+.page-backoffice-points .box-result .pagination-detail .pagination>.active>a, 
+.page-backoffice-points .box-result .pagination-detail .pagination>.active>span, 
+.page-backoffice-points .box-result .pagination-detail .pagination>.active>a:hover, 
+.page-backoffice-points .box-result .pagination-detail .pagination>.active>span:hover, 
+.page-backoffice-points .box-result .pagination-detail .pagination>.active>a:focus, 
+.page-backoffice-points .box-result .pagination-detail .pagination>.active>span:focus{
+background: #9f1211;
+border-color: #9f1211;
+}
+
+
+.page-backoffice-points .box-header-white .header-right .app-search .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #666;
+}
+.page-backoffice-points .box-header-white .header-right .app-search .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #666;
+   opacity:  1;
+}
+.page-backoffice-points .box-header-white .header-right .app-search .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #666;
+   opacity:  1;
+}
+.page-backoffice-points .box-header-white .header-right .app-search .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #666;
+}
+.page-backoffice-points .box-header-white .header-right .app-search .form-control::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #666;
+}
+
+@media( max-width: 767px ){
+	.page-backoffice-points .box-header-white .header-right .navbar-top-links > li:first-child{
+	    display: block;
+		width: 100%;
+		margin-right: 0 !important;
+		margin-bottom: 15px;
+	}
+	.page-backoffice-points .box-header-white .header-right .app-search .form-control{
+		width: 100%;
+	}
+	.page-backoffice-points .box-header-white .header-right ul li.add{
+		border:none;
+	}
+	.page-backoffice-points .box-header-white .header-right ul li.del{
+		border:none;
+	}
+	.page-backoffice-points .box-header-white .header-left{
+		    float: none;
+		padding: 0 15px;
+		width: 100%;
+	}
+	.page-backoffice-points .box-header-white .header-right{
+		float: none;
+		padding: 0 15px;
+		width: 100%;
+	}
+}

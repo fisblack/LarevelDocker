@@ -1,0 +1,149 @@
+.page-backoffice-userclass-create{
+	padding-top:30px;
+}
+.page-backoffice-userclass-create .box-header-white {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.page-backoffice-userclass-create .box-header-white .header-left {
+    display: inline-block;
+    float: left;
+    line-height: 61px;
+    padding-left: 20px;
+}
+.page-backoffice-userclass-create .box-header-white .header-left figure {
+    display: inline-block;
+	margin-right: 15px;
+}
+.page-backoffice-userclass-create .box-header-white .header-left .title {
+    color: #666;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+}
+.page-backoffice-userclass-create .box-header-white .header-left .title.active {
+    color: #000;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+}
+.page-backoffice-userclass-create .box-result {
+    background: #fff;
+    padding: 40px;
+}
+.page-backoffice-userclass-create .box-result .col-center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    background: #fafafa;
+    border: 1px solid #e5e5e5;
+}
+.page-backoffice-userclass-create .box-result .col-center .form-userclass{
+	font-family: 'Kanit', sans-serif;
+}
+.page-backoffice-userclass-create .box-result .col-center .form-userclass {
+	border-radius: 4px;
+}
+.page-backoffice-userclass-create .box-result .col-center .form-userclass .show-msg{
+	    font-weight: 500;
+    letter-spacing: .3px;
+}  
+.page-backoffice-userclass-create .box-result .col-center .form-userclass .control-label{
+	text-align: left;
+}
+.page-backoffice-userclass-create .box-result .col-center .form-userclass .form-control{
+	border-radius: 4px;
+}
+.page-backoffice-userclass-create .box-result .col-center .form-userclass .btn-save{
+	background: #980f0e;
+	color: #fff;
+	padding: 6px 25px;
+    font-weight: 400;
+	text-transform: capitalize;
+	    border-radius: 4px;
+}
+.page-backoffice-userclass-create .box-result .col-center .form-userclass .btn-cancel{
+	background: #353432;
+	color: #bfbfbf;
+	padding: 6px 25px;
+    font-weight: 400;
+	text-transform: uppercase;
+}
+
+.page-backoffice-userclass-create .box-result .col-center .form-userclass #bankacc .dd-selected-image{
+    width: 22px;
+}
+.page-backoffice-userclass-create .box-result .col-center .form-userclass #bankacc .dd-option-image{
+    width: 22px;
+}
+.page-backoffice-userclass-create .box-result .col-center .form-userclass #bankacc .dd-desc{
+    margin-top: 3px;
+    color: #666;
+}
+.page-backoffice-userclass-create .box-result .col-center .form-userclass .input-bot{
+	margin-bottom: 4px;
+}
+.page-backoffice-userclass-create .box-result .col-center .form-userclass .btn-class{
+	background: #e4e7ea;
+	color: #fff;
+    padding: 3px 8px;
+    width: 100px;
+    font-size: 13px;
+}
+.page-backoffice-userclass-create .box-result .col-center .form-userclass .btn-class.silver{
+	background: #b7b7b7;
+	    margin-right: 8px;
+}
+.page-backoffice-userclass-create .box-result .col-center .form-userclass .btn-class.gold{
+background: #ba8400;
+    margin-right: 8px;
+}
+.page-backoffice-userclass-create .box-result .col-center .form-userclass .btn-class.platinum{
+background: #0072bc;
+}
+
+.page-backoffice-userclass-create .box-result .col-center .form-userclass .input-plc-center::-webkit-input-placeholder {
+   text-align: center;
+}
+
+.page-backoffice-userclass-create .box-result .col-center .form-userclass .input-plc-center:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+.page-backoffice-userclass-create .box-result .col-center .form-userclass .input-plc-center::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+.page-backoffice-userclass-create .box-result .col-center .form-userclass .input-plc-center:-ms-input-placeholder {  
+   text-align: center; 
+}
+.page-backoffice-userclass-create .box-result .col-center .form-userclass .asColorPicker-trigger {
+    position: absolute;
+    top: 0;
+    right: -35px;
+    height: 38px;
+    width: 37px;
+    border: 0;
+}
+.page-backoffice-userclass-create .box-result .col-center .form-userclass .asColorPicker-wrap{
+	width: calc(100% - 37px);
+}
+
+@media( max-width: 600px ){
+	.page-backoffice-userclass-create .box-result .col-center .form-userclass .btn-class{
+		width: 100%;
+	}
+	.page-backoffice-userclass-create .box-result .col-center .form-userclass .btn-class.silver{
+		margin-bottom: 8px;
+		margin-right: 0px;
+	}
+	.page-backoffice-userclass-create .box-result .col-center .form-userclass .btn-class.gold{
+		margin-bottom: 8px;
+		margin-right: 0px;		
+	}
+	.page-backoffice-userclass-create .box-result .col-center .form-userclass .btn-class.platinum{
+		margin-bottom: 8px;
+		margin-right: 0px;	
+	}
+}

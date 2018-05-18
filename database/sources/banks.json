@@ -1,0 +1,85 @@
+[{
+        "name": "ธนาคารกรุงเทพ",
+        "logo": "/images/backOffice/bankAcc/logo/bbl.jpg"
+    },
+    {
+        "name": "ธนาคารกสิกรไทย",
+        "logo": "/images/backOffice/bankAcc/logo/kbank.jpg"
+    },
+    {
+        "name": "ธนาคารกรุงไทย",
+        "logo": "/images/backOffice/bankAcc/logo/ktb.jpg"
+    },
+    {
+        "name": "ธนาคารทหารไทย",
+        "logo": "/images/backOffice/bankAcc/logo/tmb.jpg"
+    },
+    {
+        "name": "ธนาคารไทยพาณิชย์",
+        "logo": "/images/backOffice/bankAcc/logo/scb.jpg"
+    },
+    {
+        "name": "ธนาคารกรุงศรีอยุธยา",
+        "logo": "/images/backOffice/bankAcc/logo/bay.jpg"
+    },
+    {
+        "name": "ธนาคารเกียรตินาคิน",
+        "logo": "/images/backOffice/bankAcc/logo/kk.jpg"
+    },
+    {
+        "name": "ธนาคารซีไอเอ็มบีไทย",
+        "logo": "/images/backOffice/bankAcc/logo/cimb.jpg"
+    },
+    {
+        "name": "ธนาคารทิสโก้",
+        "logo": "/images/backOffice/bankAcc/logo/tisco.jpg"
+    },
+    {
+        "name": "ธนาคารธนชาต",
+        "logo": "/images/backOffice/bankAcc/logo/tbank.jpg"
+    },
+    {
+        "name": "ธนาคารยูโอบี",
+        "logo": "/images/backOffice/bankAcc/logo/uob.jpg"
+    },
+    {
+        "name": "ธนาคารสแตนดาร์ดชาร์เตอร์ด (ไทย)",
+        "logo": "/images/backOffice/bankAcc/logo/sc.jpg"
+    },
+    {
+        "name": "ธนาคารไทยเครดิตเพื่อรายย่อย",
+        "logo": "/images/backOffice/bankAcc/logo/tcrb.jpg"
+    },
+    {
+        "name": "ธนาคารแลนด์ แอนด์ เฮาส์",
+        "logo": "/images/backOffice/bankAcc/logo/lhb.jpg"
+    },
+    {
+        "name": "ธนาคารไอซีบีซี (ไทย)",
+        "logo": "/images/backOffice/bankAcc/logo/icbc.jpg"
+    },
+    {
+        "name": "ธนาคารพัฒนาวิสาหกิจขนาดกลางและขนาดย่อมแห่งประเทศไทย",
+        "logo": "/images/backOffice/bankAcc/logo/sme.jpg"
+    },
+    {
+        "name": "ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร",
+        "logo": "/images/backOffice/bankAcc/logo/baac.jpg"
+    },
+    {
+        "name": "ธนาคารเพื่อการส่งออกและนำเข้าแห่งประเทศไทย",
+        "logo": "/images/backOffice/bankAcc/logo/exim.jpg"
+    },
+    {
+        "name": "ธนาคารออมสิน",
+        "logo": "/images/backOffice/bankAcc/logo/gsb.jpg"
+    },
+    {
+        "name": "ธนาคารอาคารสงเคราะห์",
+        "logo": "/images/backOffice/bankAcc/logo/ghb.jpg"
+    },
+    {
+        "name": "ธนาคารอิสลามแห่งประเทศไทย",
+        "logo": "/images/backOffice/bankAcc/logo/ibank.jpg"
+    }
+]

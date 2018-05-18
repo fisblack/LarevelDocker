@@ -1,0 +1,259 @@
+.page-backoffice-shipping {
+	padding-top:30px;
+}
+.page-backoffice-shipping .box-header-white {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.page-backoffice-shipping .box-header-white .header-left {
+    display: inline-block;
+    float: left;
+    line-height: 61px;
+    padding-left: 20px;
+}
+.page-backoffice-shipping .box-header-white .header-left figure {
+    display: inline-block;
+	margin-right:15px;
+}
+.page-backoffice-shipping .box-header-white .header-left .title{
+    color: #000;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+}
+.page-backoffice-shipping .box-header-white .header-left figure img {} .page-backoffice-bankacc .box-header-white .header-left .title {
+    color: #333;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+}
+.page-backoffice-shipping .box-header-white .header-right {
+    display: inline-block;
+    float: right;
+}
+.page-backoffice-shipping .box-header-white .header-right .app-search .form-control {
+    border: 1px solid #ccc;
+    color: #ccc;
+	    border-radius: 4px;
+}
+.page-backoffice-shipping .box-header-white .header-right .app-search .form-control:focus {
+    border: 1px solid #ccc;
+    color: #ccc;
+}
+.page-backoffice-shipping .box-header-white .header-right .app-search a {
+    color: #ccc;
+}
+.page-backoffice-shipping .box-header-white .header-right ul li.add {
+    border-left: 1px solid #ccc
+}
+.page-backoffice-shipping .box-header-white .header-right ul li.add a {
+    padding: 0 20px;
+}
+.page-backoffice-shipping .box-header-white .header-right ul li.add a img {
+    width: 25px;
+}
+.page-backoffice-shipping .box-header-white .header-right ul li.del {
+    border-left: 1px solid #ccc
+}
+.page-backoffice-shipping .box-header-white .header-right ul li.del a {
+    padding: 0 20px;
+}
+.page-backoffice-shipping .box-header-white .header-right ul li.del a img {
+    width: 25px;
+}
+.page-backoffice-shipping .box-result {
+    background: #fff;
+    padding: 8px;
+}
+.page-backoffice-shipping .box-result table tbody>tr{
+	background: -webkit-gradient(linear,left top,left bottom,from(#fff),color-stop(49%,#fbfbfc),to(#f7f7f7));
+    background: linear-gradient(180deg,#fff 0,#fbfbfc 49%,#f7f7f7);
+}
+
+.page-backoffice-shipping .box-result table tbody>tr>td.first {
+	width: 5%;
+    text-align: center;
+    vertical-align: middle;
+}
+.page-backoffice-shipping .box-result table tbody>tr>td.first input[type=checkbox]{
+    width: 16px;
+    height: 16px;
+}
+.page-backoffice-shipping .box-result table tbody>tr>td.second {
+    
+	    vertical-align: middle;
+		    border: none;
+			    border-bottom: 1px solid #e5e5e5;
+}
+
+
+.page-backoffice-shipping .box-result table tbody>tr>td.second ul {
+    display: inline-block;
+    margin: 0px;
+    line-height: 25px;
+}
+
+
+.page-backoffice-shipping .box-result table tbody>tr>td.second ul li:first-child strong {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    color: #a62221;
+}
+.page-backoffice-shipping .box-result table tbody>tr>td.second ul li:first-child strong.active{
+	color: #0f9b0f;
+}
+.page-backoffice-shipping .box-result table tbody>tr>td.second ul li:first-child strong.not-active{
+	color: #e62827;
+}
+.page-backoffice-shipping .box-result table tbody>tr>td.second ul li:first-child span.active{
+	color: #a5a5a5;
+	    font-weight: 300;
+}
+.page-backoffice-shipping .box-result table tbody>tr>td.second ul li:first-child span {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    color: #000000;
+}
+.page-backoffice-shipping .box-result table tbody>tr>td.second ul li strong {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    color: #a62221;
+}
+.page-backoffice-shipping .box-result table tbody>tr>td.second ul li span {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    color: #000000;
+}
+
+
+.page-backoffice-shipping .box-result table tbody>tr>td.three ul {
+    margin: 0;
+}
+.page-backoffice-shipping .box-result table tbody>tr>td.three ul li:first-child {
+    margin-bottom: 2px;
+}
+.page-backoffice-shipping .box-result table tbody>tr>td.three ul li {
+    text-align: center;
+	margin: 8px 0;
+}
+.page-backoffice-shipping .box-result table tbody>tr>td.three ul li a {
+    display: inline-block;
+    padding: 2px;
+    background-color: transparent;
+    border: 1px solid #e4e4e4;
+}
+.page-backoffice-shipping .box-result table tbody>tr>td.three ul li a img {
+    width: 20px
+}
+.page-backoffice-shipping .box-result table tbody>tr.del-colspan>td{
+	background: #dedddd;
+	vertical-align:middle;
+}
+.page-backoffice-shipping .box-result table tbody>tr.del-colspan>td.three ul li a{
+	border:none;
+}
+.page-backoffice-shipping .box-result table tbody>tr.del-colspan>td.three ul li a img{
+	width: auto;
+}
+.page-backoffice-shipping .box-result table tbody>tr.del-colspan>td.second ul li span{
+    font-weight: 300;
+    color: #959594;
+}
+.page-backoffice-shipping .box-result table tbody>tr.del-colspan>td.second ul li strong{
+    font-weight: 300;
+    color: #959594;
+	text-decoration: line-through;
+}
+.page-backoffice-shipping .box-result table tbody>tr.del-colspan>td.second ul li{
+    position: relative;
+	    text-decoration: line-through;
+    color: #959594;
+}
+
+
+.page-backoffice-shipping .box-result .pagination-detail p {
+    line-height: 33px;
+    margin: 0;
+	    font-family: 'Kanit', sans-serif;
+}
+.page-backoffice-shipping .box-result .pagination-detail .right {
+    text-align: right;
+}
+.page-backoffice-shipping .box-result .pagination-detail .right ul {
+    margin: 0;
+}
+.page-backoffice-shipping .box-result .pagination-detail .pagination>.active>a, 
+.page-backoffice-shipping .box-result .pagination-detail .pagination>.active>span, 
+.page-backoffice-shipping .box-result .pagination-detail .pagination>.active>a:hover, 
+.page-backoffice-shipping .box-result .pagination-detail .pagination>.active>span:hover, 
+.page-backoffice-shipping .box-result .pagination-detail .pagination>.active>a:focus, 
+.page-backoffice-shipping .box-result .pagination-detail .pagination>.active>span:focus{
+background: #9f1211;
+border-color: #9f1211;
+color:#fff;
+}
+.page-backoffice-shipping .box-result .pagination-detail .right ul>li>a{
+    color: #9f1211;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+
+.page-backoffice-shipping .box-header-white .header-right .app-search .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #666;
+}
+.page-backoffice-shipping .box-header-white .header-right .app-search .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #666;
+   opacity:  1;
+}
+.page-backoffice-shipping .box-header-white .header-right .app-search .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #666;
+   opacity:  1;
+}
+.page-backoffice-shipping .box-header-white .header-right .app-search .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #666;
+}
+.page-backoffice-shipping .box-header-white .header-right .app-search .form-control::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #666;
+}
+
+.btn-express{
+	background: #fff;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-bottom: none;
+    width: 8em;
+}
+
+.btn-express.active{
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(49%, #fbfbfc), to(#f7f7f7));
+    background: linear-gradient(180deg, #fff 0, #eee 49%, #f7f7f7);
+}
+
+@media( max-width: 767px ){
+	.page-backoffice-shipping .box-header-white .header-right .navbar-top-links > li:first-child{
+	    display: block;
+		width: 100%;
+		margin-right: 0 !important;
+		margin-bottom: 15px;
+	}
+	.page-backoffice-shipping .box-header-white .header-right .app-search .form-control{
+		width: 100%;
+	}
+	.page-backoffice-shipping .box-header-white .header-right ul li.add{
+		border:none;
+	}
+	.page-backoffice-shipping .box-header-white .header-right ul li.del{
+		border:none;
+	}
+	.page-backoffice-shipping .box-header-white .header-left{
+		    float: none;
+		padding: 0 15px;
+		width: 100%;
+	}
+	.page-backoffice-shipping .box-header-white .header-right{
+		float: none;
+		padding: 0 15px;
+		width: 100%;
+	}
+}

@@ -1,0 +1,146 @@
+.page_about_us {} .bg-about-us {
+    background: #f8f8f8;
+}
+.page_about_us .group-head {
+    padding-top: 15px;
+}
+.page_about_us .group-head .img-center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 250px;
+}
+.page_about_us .group-head .title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-family: 'quarkbold';
+	
+}
+.page_about_us .group-head .detail {
+    font-size: 19px;
+    font-weight: 300;
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    font-family: 'quarkbold';
+}
+.page_about_us .group-detail-right {
+    padding-top: 15px;
+}
+.page_about_us .group-detail-right .heade-title {
+    font-size: 19px;
+    font-family: 'quarkbold';
+}
+.page_about_us .group-detail-right .address {
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.page_about_us .group-detail-right .email {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 12px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    padding: 0;
+}
+.page_about_us .group-detail-right .icon{
+    color: #ad1b3f;
+    font-family: 'quarkbold';
+}
+
+.page_about_us .group-content .gp-img {
+    background: #ad1b3f;
+    display: inline-block;
+    padding: 15px;
+    height: 55px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.page_about_us .group-content .group-img-left {
+    border-top-left-radius: 20px;
+    padding-right: 0;
+}
+.page_about_us .group-content .group-img-right {
+    padding-left: 0;
+}
+.page_about_us .group-content .group-midde-left {
+    padding: 150px 80px;
+    font-size: 16px;
+}
+.page_about_us .group-content .group-midde-right {
+    padding-left: 0;
+}
+.page_about_us .group-content .group-ps-right {
+    padding-left: 0;
+    background-color: #ad1839;
+    width: 480px;
+    /*background: url('../../images/06_about_us/ps.png');
+    background-repeat: no-repeat;*/
+    height: 504px;
+    overflow: hidden;
+}
+.page_about_us .group-content .group-ps-right .text {
+    padding: 80px;
+    color: #fff;
+    font-size: 16px;
+}
+.page_about_us .group-last {
+    margin-top: 25px;
+    padding: 30px;
+}
+
+.page_about_us .img-one {
+    width: 475px;
+    height: 317px;
+    border-bottom-left-radius: 70px;
+}
+
+.page_about_us .img-two {
+    width: 475px;
+    height: 317px;
+}
+
+.page_about_us .writer_item {
+    margin-top: 25px;
+    height: 60px;
+    width: 60px;
+    border-radius:50%;
+}
+
+@media( max-width:768px) {
+    .page_about_us .group-content .group-ps-right {
+        background-size: 100%;
+        padding-left: 15px;
+    }
+    .page_about_us .group-content .group-ps-right .text {
+        padding: 20px 15px;
+    }
+    .page_about_us .group-last {
+        margin-top: 0;
+        padding: 0 15px;
+    }
+    .page_about_us .group-content .group-midde-right {
+        padding: 0 0px;
+    }
+    .page_about_us .group-content .group-midde-left {
+        padding: 15px;
+    }
+    .page_about_us .group-content .group-img-right {
+        padding-right: 0;
+    }
+    .page_about_us .group-content .group-img-left {
+        padding-left: 0px;
+    }
+	.page_about_us .group-detail-right{
+		margin-bottom: 55px;
+	}
+	.page_about_us .group-content .gp-img{
+		height: 30px;
+		padding: 8px;
+	}
+	.page_about_us .group-content .gp-img img{
+		width: 23px;
+	}
+}

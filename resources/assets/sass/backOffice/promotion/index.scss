@@ -1,0 +1,163 @@
+$promotion-stroke: #d0cfcf;
+$promotion-border-color: #a1a1a1;
+$promotion-border-radius: 3px;
+
+$promotion-black: #000;
+$promotion-white: #fff;
+$promotion-red: #980f0e;
+$promotion-gray: #b4b4b4;
+$promotion-dark-gray: #2b2b29;
+$promotion-font-color: #686868;
+
+.backoffice-promotion-index {
+	padding-top: 15px;
+	font-family: 'Kanit', sans-serif !important;
+
+	@media screen and (max-width: 1023px) {
+		padding: 15px;
+	}
+
+	.form-group {
+		margin: 0;
+	}
+
+	.panel-default {
+		border: 1px solid $promotion-stroke;
+	}
+
+	.last {
+		margin-bottom: 0 !important;
+	}
+
+	.verticle-middle {
+		text-align: center !important;
+	}
+
+	input, select, textarea {
+		outline: none;
+		padding: 6px 10px 3px;
+		background-color: $promotion-white;
+		border-radius: $promotion-border-radius;
+		border: 1px solid $promotion-border-color;
+	}
+
+	button {
+		min-width: 110px;
+		padding: 5px 0;
+		margin: 0 15px;
+		color: $promotion-white;
+		border: none;
+		border-radius: $promotion-border-radius;
+		outline: none;
+
+		&.button-save {
+			background-color: $promotion-red;
+
+			&:hover {
+				background-color: #e0252c;
+			}
+
+			&:active {
+				background-color: #ce1a1d;
+			}
+		}
+
+		&.button-cancel {
+			background-color: $promotion-dark-gray;
+
+			&:hover {
+				background-color: #1a191f;
+			}
+
+			&:active {
+				background-color: #3d3e40;
+			}
+		}
+
+		@media screen and (max-width: 1023px) {
+			margin: 0;
+		}
+	}
+}
+
+
+.panel-default .section-header {
+	padding: 20px 30px;
+	border-bottom: 1px solid $promotion-stroke;
+	font-size: 1.3em;
+	font-weight: bold;
+
+	@media screen and (max-width: 1023px) {
+		padding: 15px 20px;
+	}
+
+	span {
+		vertical-align: bottom;
+
+		&.pagination-previous {
+			color: $promotion-gray;
+			padding-left: 10px;
+		}
+
+		&.pagination-now {
+			color: $promotion-black;
+		}
+	}
+}
+
+.panel-default .section-body {
+	padding: 0 30px;
+
+	.information{
+		padding: 20px 0;
+		border-bottom: 1px solid $promotion-stroke;
+
+		input, select {
+			width: 80px;
+			max-width: 110px;
+			height: 38px;
+			background-color: $promotion-white;
+			border-radius: $promotion-border-radius;
+			border: 1px solid $promotion-border-color;
+			vertical-align: middle;
+			display: inline-block;
+
+			@media screen and (max-width: 1023px) {
+				min-width: 90%;
+				max-width: 90%;
+			}
+		}
+
+		.row{
+			padding: 10px 0px;
+		}
+
+		.date{
+			.input-group-addon{
+				display: table;
+				padding: 10px 12px;
+
+				@media screen and (max-width: 1023px) {
+					display: table-cell;
+					right: 0;
+				}
+			}
+
+			.form-control{
+				@media screen and (max-width: 1023px) {
+					width: 100%;
+					max-width: 100%;
+				}
+			}
+
+			@media screen and (max-width: 1023px) {
+				width: 90%;
+			}
+		}
+	}
+
+	.submit {
+		padding: 20px 0;
+		text-align: center;
+	}
+}

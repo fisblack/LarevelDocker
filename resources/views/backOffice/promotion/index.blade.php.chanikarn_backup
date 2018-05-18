@@ -1,0 +1,229 @@
+{{--
+    @author: Chanikarn Thavornwong
+    @phone: 0909737246
+    @email: ploid.t@gmail.com
+--}}
+
+@extends('layouts.backOffice.template')
+
+@section('head')
+    <link rel="stylesheet" href="{{ asset('css/backOffice/promotion/index.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:100,300,400" rel="stylesheet">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+@endsection
+
+@section('body')
+    <div class="container-fluid">
+    	<div class="promotion-wrapper">
+            <div class="shadow">
+                <div class="header underline">
+                    <div class="page-name-wrapper float-left verticle-middle-wrapper">
+                        <div class="vm-div heading">
+                            <figure>
+                                <img src="{{ asset('images/backOffice/promotion/header-icon-promotion.png') }}" > Promotion
+
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="btn-action verticle-middle-wrapper">
+                        <div class="vm-div">
+                            <a href="#"> <img src="{{ asset('images/backOffice/promotion/header-delete.png') }}"></a>
+                        </div>
+                    </div>
+
+                    <div class="btn-action verticle-middle-wrapper">
+                        <div class="vm-div">
+                          <a href="{{ route('backOffice.promotion.create') }}">  <img src="{{ asset('images/backOffice/promotion/header-add.png') }}"></a>
+                        </div>
+                    </div>
+                    <div class="search-wrapper verticle-middle-wrapper">
+                      <div class="input-group vm-div">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <div class="input-group-btn">
+                          <button class="btn btn-default" type="submit">
+                                  <img src="{{ asset('images/backOffice/promotion/header-icon-search.png') }}">
+                          </button>
+                        </div>
+                      </div>
+
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="promotion-list">
+                        <div class="promotion row">
+                            <div class="col-xs-2 col-sm-1 promotion-checkbox verticle-middle-wrapper">
+                                <div class="vm-div">
+                                    <input type="checkbox" name="promotionCheckbox" class="vm-element checkbox">
+                                </div>
+
+                            </div>
+                            <div class="col-xs-10 col-sm-9 col-md-10 detail verticle-middle-wrapper">
+                                <div class="vm-div">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <p class="heading">BBBB</p>
+                                        </div>
+                                        <div class="">
+                                            <div class="col-xs-12 col-sm-4">
+                                                <p class="text-red">Limit / User:</p>
+                                                <span class="text-big">5</span>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <p class="text-red">Start - End:</p>
+                                                <span class="text-big">1/1/60 - 1/1/61</span>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <p class="text-red">Active:</p>
+
+                                                <!-- promotion id for toggle switch -->
+                                                <div id="promoToggle-1">
+                                                    <input type="checkbox" checked data-toggle="toggle" data-size="mini" data-width="46" data-height="17" data-onstyle="success" data-offstyle="danger" data-style="promo-toggle" class="promotion-activation">
+                                                    <span class="text-activate" id="promo-1">เปิด</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-12 col-sm-1 setting verticle-middle-wrapper">
+                                <div class="vm-div">
+                                    <div class="vm-element">
+                                        <div class="icon-wrapper">
+                                            <img src="{{ asset('images/backOffice/promotion/content-edit.png') }}" alt="edit icon">
+                                        </div>
+                                        <div class="icon-wrapper">
+                                            <img src="{{ asset('images/backOffice/promotion/content-delete.png') }}" alt="delete icon">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- end promotion div -->
+
+                        <div class="promotion row">
+                            <div class="col-xs-2 col-sm-1 promotion-checkbox verticle-middle-wrapper">
+                                <div class="vm-div">
+                                    <input type="checkbox" name="promotionCheckbox" class="vm-element">
+                                </div>
+
+                            </div>
+                            <div class="col-xs-10 col-sm-9 col-md-10 detail verticle-middle-wrapper">
+                                <div class="vm-div">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <p class="heading">CCCC</p>
+                                        </div>
+                                        <div class="">
+                                            <div class="col-xs-12 col-sm-4">
+                                                <p class="text-red">Limit / User:</p>
+                                                <span class="text-big">4</span>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <p class="text-red">Start - End:</p>
+                                                <span class="text-big">1/1/60 - 1/1/61</span>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <p class="text-red">Active:</p>
+
+                                                <!-- promotion id for toggle switch -->
+                                                <div id="promoToggle-2">
+                                                    <input type="checkbox" checked data-toggle="toggle" data-size="mini" data-width="46" data-height="17" data-onstyle="success" data-offstyle="danger" data-style="promo-toggle" class="promotion-activation">
+                                                    <span class="text-activate" id="promo-2">เปิด</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-12 col-sm-1 setting verticle-middle-wrapper">
+                                <div class="vm-div">
+                                    <div class="vm-element">
+                                        <div class="icon-wrapper">
+                                            <img src="{{ asset('images/backOffice/promotion/content-edit.png') }}" alt="edit icon">
+                                        </div>
+                                        <div class="icon-wrapper">
+                                            <img src="{{ asset('images/backOffice/promotion/content-delete.png') }}" alt="delete icon">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- end promotion div -->
+
+                        <div class="promotion row disable">
+                            <div class="col-xs-2 col-sm-1 promotion-checkbox verticle-middle-wrapper">
+                                <div class="vm-div">
+                                    <input type="checkbox" name="promotionCheckbox" class="vm-element">
+                                </div>
+
+                            </div>
+                            <div class="col-xs-10 col-sm-9 col-md-10 detail verticle-middle-wrapper">
+                                <div class="vm-div">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <p class="heading">DDDD</p>
+                                        </div>
+                                        <div class="">
+                                            <div class="col-xs-12 col-sm-4">
+                                                <p class="text-red">Limit / User:</p>
+                                                <span class="text-big">5</span>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <p class="text-red">Start - End:</p>
+                                                <span class="text-big">1/1/60 - 1/1/61</span>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <p class="text-red">Disable</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-12 col-sm-1 setting verticle-middle-wrapper">
+                                <div class="vm-div">
+                                    <div class="vm-element">
+                                        <div class="icon-wrapper">
+                                            <img src="{{ asset('images/backOffice/promotion/content-refresh.png') }}" alt="refresh icon">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- end promotion div -->
+
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <div class="summary">
+                        ทั้งหมด 3 รายการ
+                    </div>
+                    <div class="pages">
+                        <div class="box verticle-middle-wrapper">
+                            <div class="vm-div">1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    	</div>
+    </div>
+@endsection
+
+@section('script')
+    <script src="{{ asset('js/backOffice/promotion/index.js') }}"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+@endsection

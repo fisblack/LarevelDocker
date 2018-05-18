@@ -1,0 +1,232 @@
+.easy-autocomplete {
+  width: 100% !important;
+  input {
+    background-color: #ffffff !important;
+    border: 1px solid #e4e7ea !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    color: #565656 !important;
+    height: 38px !important;
+    max-width: 100% !important;
+    padding: 7px 12px !important;
+    transition: all 300ms linear 0s !important;
+  }
+}
+
+.img-profile-preview {
+  height: 124px;
+  width: 124px;
+}
+
+.page-backoffice-profile{
+	padding-top:30px;
+}
+.page-backoffice-profile .box-header-white {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.page-backoffice-profile .box-header-white .header-left {
+    display: inline-block;
+    float: left;
+    line-height: 61px;
+    padding-left: 20px;
+}
+.page-backoffice-profile .box-header-white .header-left figure {
+    display: inline-block;
+	    margin-right: 8px;
+}
+
+.page-backoffice-profile .box-header-white .header-left .title.active {
+    color: #333;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+}
+.page-backoffice-profile .box-result {
+    background: #fff;
+	padding: 20px 0;
+}
+.page-backoffice-profile .box-result .col-center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    background: #fafafa;
+    border: 1px solid #e5e5e5;
+}
+.page-backoffice-profile .box-result .form-userclass{
+	font-family: 'Kanit', sans-serif;
+}
+.page-backoffice-profile .box-result .form-userclass {
+
+}  
+.page-backoffice-profile .box-result .form-userclass .control-label{
+	text-align: left;
+	color:#000;
+}
+.page-backoffice-profile .box-result .form-userclass input{
+	border-radius:4px;
+}
+.page-backoffice-profile .box-result .form-userclass .btn-save{
+    background: #980f0e;
+    color: #fff;
+    padding: 6px 25px;
+    font-weight: 400;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+.page-backoffice-profile .box-result .form-userclass .btn-cancel{
+	background: #353432;
+	color: #bfbfbf;
+	padding: 6px 25px;
+    font-weight: 300;
+}
+
+.page-backoffice-profile .box-result .form-userclass #bankacc .dd-selected-image{
+    width: 22px;
+}
+.page-backoffice-profile .box-result .form-userclass #bankacc .dd-option-image{
+    width: 22px;
+}
+.page-backoffice-profile .box-result .form-userclass #bankacc .dd-desc{
+    margin-top: 3px;
+    color: #666;
+}
+
+.page-backoffice-profile .box-result .form-userclass .group-address .title{
+color: #000;
+    font-weight: 600;
+}
+
+.page-backoffice-profile .box-result .form-userclass .group-address .group{
+	padding:0px;
+	margin-top: 20px;
+}
+
+.page-backoffice-profile .box-result .form-userclass .group-address .group .block{
+	display:block;
+	margin-bottom: 15px;
+}
+.page-backoffice-profile .box-result .form-userclass .group-address .group input[type='radio'] {
+    -webkit-appearance:none;
+    width:20px;
+    height:20px;
+    border:1px solid darkgray;
+    border-radius:50%;
+    outline:none;
+}
+
+.page-backoffice-profile .box-result .form-userclass .group-address .group input[type='radio']:before {
+    content:'';
+    display:block;
+    width: 10px;
+    height: 10px;
+    margin: 20% auto;    
+    border-radius:50%;    
+}
+.page-backoffice-profile .box-result .form-userclass .group-address .group input[type='radio']:checked:before {
+    background:#980f0e;
+}
+
+.page-backoffice-profile .box-result .form-userclass .group-address .box-gray{
+	background:#eee;
+	padding:15px;
+	    margin-bottom: 20px;
+}
+.page-backoffice-profile .box-result .form-userclass .group-address .box-gray .title-add{
+    margin: 0 0 8px;
+    line-height: 22px;
+    font-size: 16px;
+    color: #ad1b3f;
+	    font-weight: 600;
+    font-family: 'Kanit', sans-serif;
+}
+.page-backoffice-profile .box-result .form-userclass .group-address .box-gray address{
+	margin-bottom:0px;
+	position: relative;
+	    color: #666;
+}
+.page-backoffice-profile .box-result .form-userclass .group-address .box-gray address .bin{
+	right: 20px;
+	position: absolute;
+	    z-index: 999;
+}
+
+.page-backoffice-profile .box-result .form-userclass .group-address .btn-add-address{
+	background: #353432;
+	color:#fff;
+	border-radius: 3px;
+}
+.page-backoffice-profile .box-result .form-userclass .group-address .btn-add-address:hover{
+	background: #333029;
+	color:#fff;
+}
+
+.page-backoffice-profile .box-result .form-userclass .pro-preview{
+    padding: 25px 15px;
+    background: #f8f8f8;
+	    font-size: 16px;
+}
+.page-backoffice-profile .box-result .form-userclass .pro-preview img{
+	margin: 0 auto;
+	    margin-bottom: 15px;
+}
+.page-backoffice-profile .box-result .form-userclass .pro-preview .img-title{
+    text-align: center;
+    color: #002448;
+    font-size: 16px;
+	    font-weight: 500;
+}
+.page-backoffice-profile .box-result .form-userclass .pro-preview .img-title-sub{
+	text-align:center;
+	margin-bottom: 15px;
+}
+.page-backoffice-profile .box-result .form-userclass .pro-preview .g-btn{
+	text-align:center;
+	margin-bottom: 25px;
+}
+.page-backoffice-profile .box-result .form-userclass .pro-preview .g-btn .upload{
+    background: transparent;
+    border: 1px solid #002448;
+    text-transform: capitalize;
+    color: #002448;
+    border-radius: 3px;
+}
+.page-backoffice-profile .box-result .form-userclass .pro-preview .g-point{
+	margin-bottom: 15px;
+	    color: #002448;
+}
+.page-backoffice-profile .box-result .form-userclass .pro-preview .g-custome{
+	margin-bottom: 15px;
+	    color: #002448;
+		    font-weight: 500;
+		    text-transform: capitalize;
+}
+
+.page-backoffice-profile .box-result .form-userclass .pro-preview .btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.page-backoffice-profile .box-result .form-userclass .pro-preview .btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.address-section {
+  padding-right: 15px;
+}
+
+.address-span {
+  padding: 7px 12px;
+}

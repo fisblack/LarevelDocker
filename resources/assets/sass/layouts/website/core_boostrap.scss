@@ -1,0 +1,13 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "_00_header";
+@import "_00_footer";
+
+$fa-font-path: "/font-awesome/fonts" !default;
+@import 'node_modules/font-awesome/scss/font-awesome.scss';
+
+body {
+    font-family: 'Quark','Open Sans',sans-serif;
+	font-size:14px;
+}
+

@@ -1,0 +1,457 @@
+/** 
+ * @author: วราทัศน์ พานทองถาวร
+ * @phone: 087-806-5868
+ * @email: boss119@hotmail.com
+ */
+
+ 
+@import "../../scanPO/index.scss";
+
+@mixin background-gradient() {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,fbfbfc+49,f7f7f7+100 */
+    background: rgb(255, 255, 255);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 252, 1) 49%, rgba(247, 247, 247, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 252, 1) 49%, rgba(247, 247, 247, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 252, 1) 49%, rgba(247, 247, 247, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* IE6-9 */
+}
+
+@mixin background-gradien-grey() {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dfdfdf+0,dbdbdb+50,d7d7d6+100 */
+    background: rgb(223, 223, 223);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(223, 223, 223, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(215, 215, 214, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(223, 223, 223, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(215, 215, 214, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(223, 223, 223, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(215, 215, 214, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+
+/* ======================================== */
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+.records {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    &__item {
+        width: 100%;
+        display: table;
+        border-radius: 3px 0 0 3px;
+        border: 1px solid #d0d0d0;
+        border-top: 0;
+        @include background-gradient();
+        &:first-child {
+            border-top: 1px solid #d0d0d0;
+        }
+        >div {
+            display: table-cell;
+            height: 100%;
+            vertical-align: middle;
+            border-left: 1px solid #e4e4e4;
+            &:first-child {
+                border-left: 0;
+            }
+        }
+        //soft delete
+        &--delete {
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                @include background-gradien-grey();
+                z-index: 1;
+                opacity: .75;
+            }
+            .records {
+                &__check {
+                    z-index: 2;
+                    position: relative;
+                }
+                &__detail {
+                    border-left: 0 !important;
+                    color: #000000 !important;
+                    .records__description {
+                        width: calc(100% - 89px);
+                        .order__detail {
+                            span {
+                                color: #000000;
+                            }
+                            div {
+                                text-decoration: line-through;
+                            }
+                            button {
+                                background-color: #666666;
+                            }
+                        }
+                    }
+                }
+                &__action {
+                    .edit,
+                    .delete {
+                        display: none;
+                    }
+                    &__refresh {
+                        display: block;
+                        float: left;
+                        vertical-align: middle;
+                        text-align: center;
+                        line-height: 45px;
+                        border-left: 1px solid #d0d0d0;
+                        .refresh {
+                            display: inline-block;
+                        }  
+                    }
+                    
+                }
+            }
+            .status {
+                &__badge {
+                    color: #ffffff !important;
+                    &--success {
+                        background-color: #666666 !important;
+                    }
+                    &--warning {
+                        background-color: #666666 !important;
+                    }
+                    &--danger {
+                        background-color: #666666 !important;
+                    }
+                }
+            }
+        }
+    }
+    &__check {
+        text-align: center;
+        padding: 0 15px;
+        width: 20px;
+    }
+    &__detail {
+        min-width: 240px;
+        .img {
+            display: inline-block;
+            overflow: hidden;
+            margin: 0 15px 0 26px;
+            height: 100%;
+            vertical-align: top;
+            img {
+                margin-top: 10px;
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+            }
+        }
+        .records__description {
+            display: inline-block;
+            width: calc(96.5% - 78px);
+            .order {
+                display: inline-block;
+                position: relative;
+                width: 38%;
+                &:last-child {
+                    width: 20%;
+                }
+                &__detail {
+                    padding: 10px 0 0 0px;
+                    span {
+                        font-weight: 400;
+                        color: #9f1211;
+                    }
+                    p {
+                        float: right;
+                        width: 206px;
+                    }
+                }
+                &__tag {
+                    >div {
+                        span {
+                            display: block;
+                        }
+                    }
+                }
+                &__name__th {
+                    display: inline-block;
+                    width: 316px;
+                    font-weight: 500;
+                    font-size: 125%;
+                    span {
+                        font-weight: 500;
+                    }
+                }
+                &__name__th__description {
+                    display: block;
+                    width: 316px;
+                    font-weight: 400;
+                    font-size: 110%;
+                }
+                &__name__en {
+                    display: inline-block;
+                    width: 354px;
+                    font-weight: 500;
+                    font-size: 110%;
+                    span {
+                        font-weight: 500;
+                    }
+                }
+                &__name__en__description {
+                    display: block;
+                    width: 354px;
+                    font-weight: 400;
+                    font-size: 110%;
+                    p {
+                        float: right;
+                        width: 256px;
+                    }
+                }
+                &__name__category {
+                    display: inline-block;
+                    width: 280px;
+                    font-weight: 400;
+                    font-size: 110%;
+                    span {
+                        font: 100%;
+                    }
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    right: 10%;
+                    top: 16px;
+                    height: 80px;
+                    width: 1px;
+                    background: #e4e4e4;
+                }
+                &:last-child:after {
+                    width: 0px;
+                }
+
+                &__date {
+                    display: inline-block;
+                    width: 100%;
+                    color: #c8c8c8;
+                    font-size: 110%;
+                    span {
+                        font-weight: 400;
+                    }
+                }
+                button {
+                    border: 0;
+                    margin-top: 10px;
+                    background-color: #980f0e;
+                    float: left;
+                }
+                .btn-hide {
+                    background-color: #666666;
+                }  
+            }
+        }
+    }
+    &__action {
+        position: relative;
+        width: 50px;
+        border-left: 0 !important;
+        a,
+        button {
+            border: 0;
+            background-color: transparent;
+        }
+        .edit,
+        .delete {
+            display: block;
+            width: 30px;
+            height: 30px;
+            padding: 2px;
+            margin: 10px;
+            background-color: transparent;
+            border: 1px solid #e4e4e4;
+            &:hover {
+                background-color: #ffffff;
+            }
+        }
+        &__refresh {
+            display: none;
+            .refresh {
+                display: none;
+                z-index: 2;
+                position: relative;
+            }
+        }
+    }
+}
+
+.status {
+    display: inline-block;
+    padding-right: 15px;
+    color: #c8c8c8;
+    &__name {
+        font-size: 90%;
+    }
+    &__badge {
+        font-size: 90%;
+        color: #ffffff;
+        background-color: #c8c8c8;
+        display: block;
+        padding: 3px;
+        text-align: center;
+        border-radius: 3px;
+        margin-bottom: 3px;
+        width: 110px;
+        &--success {
+            background-color: #0f9b0f;
+        }
+        &--warning {
+            background-color: #cac531;
+        }
+        &--danger {
+            background-color: #9b100f;
+        }
+    }
+}
+@media (max-width: 1576px) {
+    .records {
+        &__detail {
+            .records__description {
+                .order {
+                    &:not(:first-child):after {
+                        right: 3%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1486px) {
+    .records {
+        &__item {
+            &--delete {
+                .records {
+                    &__detail {
+                        .records__description {
+                            
+                        }
+                    }
+                }
+            }
+        }
+        &__detail {
+            .records__description {
+                width: calc(93.798% - 78px);
+                .order {
+                    width: 46.5%;
+                    &:last-child {
+                        margin-top: -10px;
+                        margin-bottom: 10px;
+                    }
+                    &:not(:first-child):after {
+                        width: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1330px) {
+    .records {
+        &__detail {
+            .records__description {
+                .order {
+                    &:after {
+                        right: 4%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1260px) {
+    .records {
+        &__detail {
+            .records__description {
+                .order {
+                    width: 100%;
+                    &:last-child {
+                        width: 100%;
+                    }
+                    &:after {
+                        width: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 967px) {
+    .records {
+        &__detail {
+            .records__description {
+                .order {
+                    &:after {
+                        right: 0%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .records {
+        &__action {
+            width: 50px;
+                img {
+                    width: 30px;
+                }
+        }
+    }
+    .order {
+        padding: 7px 0;
+    }
+}
+
+@media (max-width: 479px) {
+    .records {
+        &__item--delete {
+            .records__action {
+                &__refresh {
+                    width: 50px;
+                }
+            }
+        }
+        &__detail {
+            min-width: 100px;
+            .order {
+                padding: 7px 10px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 343px) {
+    .panel-heading--action{
+        h4 {
+            width: 174px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    } 
+}

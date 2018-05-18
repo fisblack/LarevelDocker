@@ -1,0 +1,573 @@
+.reportPayment {
+  h1 {
+    color: #4f4f4f;
+    text-shadow: 1px 0 #4f4f4f;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    padding: 0;
+    margin: 55px  0 0 90px;
+  }
+  h2 {
+    color: #000;
+    text-shadow: 1px 0 #000;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-size: 21px;
+    line-height: 21px;
+    padding: 0;
+    margin: 0 0 55px 120px;
+  }
+  .border {
+    border: 1px solid #e4e4e4;
+  }
+  .radius {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+  }
+  .form-report-payment {
+    .radius {
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+    }
+    label {
+      color: #000;
+      text-shadow: 0.5px 0 #000;
+      letter-spacing: 1px;
+      font-weight: bolder;
+    }
+    .col1 {
+      float: left;
+      text-align: left;
+      width: 40%;
+      line-height: 25px;
+      padding-left: 16%;
+    }
+    .col2 {
+      float: left;
+      width: 30%;
+    }
+    .col-three-1 {
+      float: left;
+      width: 40%;
+    }
+    .col-three-2 {
+      float: left;
+      width: 20%;
+      text-align: center;
+    }
+    .col3 {
+      float: left;
+      padding-left: 10px;
+      text-align: left;
+      line-height: 25px;
+      &.arrow {
+        margin-left: -22px;
+      }
+      &.calendar {
+        margin-left: -28px;
+        color: #555;
+      }
+    }
+    .red {
+      padding: 30px;
+      input {
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        height: 23px;
+        font-size: 13px;
+        padding: 0;
+        padding-top: 3px;
+        padding-left: 0px;
+        text-align: center;
+      }
+      select {
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        height: 23px;
+        font-size: 12px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding: 0;
+        padding-top: 3px;
+        padding-left: 0px;
+        text-align-last: center;
+      }
+      label {
+        color: #a01211;
+      }
+    }
+    label.black {
+      color: #000;
+      text-shadow: 0.5px 0 #000;
+      letter-spacing: 1px;
+      font-weight: bolder;
+      padding-left: 15px;
+    }
+    .form-group {
+      margin-bottom: 0px;
+    }
+  }
+  .padding {
+    padding: 40px 65px 25px 65px;
+  }
+  .gradient {
+    background: rgba(255, 255, 255, 0);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(247, 247, 247, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(247, 247, 247, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(247, 247, 247, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(247, 247, 247, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(247, 247, 247, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(247, 247, 247, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f7', GradientType=0 );
+  }
+  .margin-bottom {
+    height: 115px;
+  }
+  .dropdown-bank {
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    padding: 20px 10px;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+        z-index: 9;
+    /*
+        position: absolute;*/
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    padding: 20px 10px;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
+  .list-bank {
+    border: 1px solid #9e9e9e;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 20px 10px;
+    cursor: pointer;
+    line-height: 0;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  li {
+    line-height: 0;
+  }
+  .list-bank:hover {
+    border: 1px solid #000;
+  }
+  img {
+    float: left;
+    display: inline-block;
+  }
+  .bank-detail {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    line-height: 15px;
+    margin-left: 0;
+    padding-left: 15px;
+    font-size: 15px;
+    margin-top: 0px;
+    padding-top: 0px;
+    li {
+      margin-top: 4px;
+      padding-top: 0px;
+      line-height: 15px;
+      &:first-child {
+        font-size: 17px;
+        padding-top: 0px;
+        margin-top: 0px;
+      }
+    }
+    span {
+      color: #a01211;
+      padding-right: 5px;
+    }
+  }
+  span.padding-left {
+    padding-left: 40px;
+  }
+  .bank-number {
+    font-size: 12px;
+    display: inline-block;
+  }
+  .list-bank .arrow {
+    display: inline-block;
+    float: right;
+    margin-top: 30px;
+  }
+  .round-button {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    width: 70px;
+    height: 70px;
+    line-height: 97px;
+    /*border: 1px solid #ccc;*/
+    border-radius: 50%;
+    color: #f5f5f5;
+    text-align: center;
+    text-decoration: none;
+    background: #fff;
+    box-shadow: 0 0 3px gray;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-box-shadow: 7px 2px 19px -5px rgba(117, 117, 117, 0.68);
+    -moz-box-shadow: 7px 2px 19px -5px rgba(117, 117, 117, 0.68);
+    box-shadow: 7px 2px 19px -5px rgba(117, 117, 117, 0.68);
+    cursor: pointer;
+    i {
+      color: #ddd;
+      font-size: 47px;
+    }
+    &:hover {
+      background: #a01211;
+    }
+  }
+}
+
+.border-custom {
+  position: relative;
+  width: 100%;
+  height: 489px;
+  display: inline-block;
+  &:before, &:after {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-color: #000;
+    border-style: solid;
+    content: ' ';
+  }
+  > :first-child {
+    &:before, &:after {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-color: #000;
+      border-style: solid;
+      content: ' ';
+    }
+  }
+  &:before {
+    top: 0;
+    left: 0;
+    border-width: 1px 0 0 1px;
+  }
+  &:after {
+    top: 0;
+    right: 0;
+    border-width: 1px 1px 0 0;
+  }
+  > :first-child {
+    &:before {
+      bottom: 0;
+      right: 0;
+      border-width: 0 1px 1px 0;
+    }
+    &:after {
+      bottom: 0;
+      left: 0;
+      border-width: 0 0 1px 1px;
+    }
+  }
+}
+
+.img-pay {
+  position: relative;
+  padding-bottom: 30px;
+  display: inline-block;
+  img {
+    height: 340px;
+    display: inline-block;
+  }
+}
+
+.box-payment {
+  /*    position: relative;*/
+//   height: 490px;
+  display: inline-block;
+  width: 100%;
+}
+
+.space {
+  height: 30px;
+}
+
+.reportPayment .form-report-payment {
+  .col1 {
+    float: left;
+    text-align: left;
+    width: 25%;
+    line-height: 25px;
+    padding-left: 0%;
+  }
+  .col2 {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: 300px) {
+  .img-pay img {
+    height: auto;
+    display: inline-block;
+    width: 100%;
+  }
+  .reportPayment {
+    span.padding-left {
+      padding-left: 5px;
+    }
+    .bank-detail {
+      padding-left: 0px;
+      padding-top: 10px;
+    }
+    .padding {
+      padding: 10px 10px 10px 10px;
+    }
+    h1 {
+      margin: 0 0 0 0;
+    }
+    h2 {
+      margin: 0 0 20px 0;
+    }
+  }
+  .show-on-mobile {
+    display: inline-block;
+  }
+  .reportPayment .form-report-payment {
+    .col1 {
+      float: left;
+      text-align: left;
+      width: 100%;
+      line-height: 25px;
+      padding-left: 0%;
+      margin-bottom: 5px;
+    }
+    .col2 {
+      float: left;
+      width: 85%;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  .img-pay img {
+    height: auto;
+    display: inline-block;
+    width: 100%;
+  }
+  .reportPayment {
+    span.padding-left {
+      padding-left: 5px;
+    }
+    .bank-detail {
+      padding-left: 10px;
+      padding-top: 0px;
+    }
+    .padding {
+      padding: 10px 10px 10px 10px;
+    }
+    h1 {
+      margin: 0 0 0 0;
+    }
+    h2 {
+      margin: 0 0 20px 0;
+    }
+  }
+  .show-on-mobile {
+    display: inline-block;
+  }
+  .reportPayment .form-report-payment {
+    .col1 {
+      float: left;
+      text-align: left;
+      width: 25%;
+      line-height: 25px;
+      padding-left: 0%;
+    }
+    .col2 {
+      float: left;
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .img-pay img {
+    height: 435px;
+    display: inline-block;
+    width: auto;
+  }
+  .reportPayment span.padding-left {
+    padding-left: 40px;
+  }
+  .box-payment {
+   
+    height: 514px;
+    display: inline-block;
+    width: 100%;
+  }
+  .show-on-mobile {
+    display: inline-block;
+  }
+  .reportPayment {
+    .bank-detail {
+      padding-left: 10px;
+      padding-top: 0px;
+    }
+    .form-report-payment {
+      .col1 {
+        float: left;
+        text-align: left;
+        width: 25%;
+        line-height: 25px;
+        padding-left: 0%;
+      }
+      .col2 {
+        float: left;
+        width: 50%;
+      }
+    }
+    h1 {
+      color: #4f4f4f;
+      text-shadow: 1px 0 #4f4f4f;
+      letter-spacing: 1px;
+      font-weight: bold;
+      font-size: 45px;
+      line-height: 45px;
+      padding: 0;
+      margin: 55px  0 0 90px;
+    }
+    h2 {
+      color: #000;
+      text-shadow: 1px 0 #000;
+      letter-spacing: 1px;
+      font-weight: bolder;
+      font-size: 21px;
+      line-height: 21px;
+      padding: 0;
+      margin: 0 0 55px 120px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .img-pay img {
+    height: 385px;
+    display: inline-block;
+  }
+  .box-payment {
+    /*    position: relative;*/
+    height: 490px;
+    display: inline-block;
+    width: 100%;
+  }
+  .reportPayment .padding {
+    padding: 20px 20px;
+  }
+  .border-custom {
+    height: 483px;
+  }
+  .reportPayment .form-report-payment {
+    .col1 {
+      float: left;
+      text-align: left;
+      width: 25%;
+      line-height: 25px;
+      padding-left: 0%;
+    }
+    .col2 {
+      float: left;
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+      .reportPayment .padding {
+    padding: 20px 60px;
+  }
+  .reportPayment .form-report-payment {
+    .col1 {
+      float: left;
+      text-align: left;
+      width: 40%;
+      line-height: 25px;
+      padding-left: 5%;
+    }
+    .col2 {
+      float: left;
+      width: 40%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .reportPayment .form-report-payment {
+    .col1 {
+      float: left;
+      text-align: left;
+      width: 40%;
+      line-height: 25px;
+      padding-left: 16%;
+    }
+    .col2 {
+      float: left;
+      width: 30%;
+    }
+  }
+}
+
+.file-upload__input {
+  opacity: 0;
+  height: 0px;
+  width: 0px;
+}
+.box-bank{
+    display: inline-block;
+    width: 100%;
+     height: 100px;
+    padding-bottom: 42px;
+    
+}
+
+.in-box-bank{
+    position: absolute;
+   
+}
+.btn-red{
+    
+    background: #ad1b3f;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    border: none;
+    line-height: 25px;
+    margin-top: 20px;
+}
+.btn-padding
+{
+    
+    padding:0 20px;
+}
+.btn-radius{
+        -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    
+}

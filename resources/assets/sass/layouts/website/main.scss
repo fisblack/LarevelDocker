@@ -1,0 +1,44 @@
+.img-small-cart {
+  width: 70px;
+  height: 70px;
+}
+.list-unstyled.cart-list {
+  overflow: auto;
+  height: 300px
+}
+
+
+li .item{
+  display:block;
+  padding:3px 10px;
+  margin: 3px 0;
+}
+
+li .item:after{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+li .item-left{
+  float:left;
+}
+li .item-left img,
+li .item-left span.item-info{
+  float:left;
+}
+li .item-left span.item-info{
+  margin-left:10px;
+}
+li .item-left span.item-info span{
+  display:block;
+}
+li .item-right{
+  float:right;
+}
+li .item-right button{
+  margin-top:14px;
+}

@@ -1,0 +1,284 @@
+.page_payment {
+	margin-bottom: 25px;
+} 
+.page_payment .payment-title {
+    padding: 59px 15px;
+    font-family: 'quarkbold';
+    font-size: 48px;
+    color: #4f4f4f;
+    text-transform: capitalize;
+}
+.page_payment .group-btn{
+	padding: 50px 0;
+}
+.page_payment .group-btn .btn-checkout{
+    font-family: 'quarkbold';
+    letter-spacing: 1px;
+    font-size: 17px;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 0 5px -2px #888;
+    box-shadow: 1px 2px 5px 1px #c1b2b2;
+	    padding: 5px 25px;
+}
+.page_payment .credit-card-box .radio-group {
+    color: #AAAAAA;
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.page_payment .credit-card-box .radio-group input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+}
+.page_payment .credit-card-box .radio-group label {
+    display: block;
+    position: relative;
+    font-weight: 300;
+    padding: 0 30px;
+    margin: 10px auto;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+    font-family: 'quarkbold';
+    font-size: 16px;
+}
+.page_payment .credit-card-box .radio-group .check {
+    display: block;
+    position: absolute;
+    border: 1px solid #AAAAAA;
+    border-radius: 100%;
+    height: 18px;
+    width: 18px;
+    top: 7px;
+    left: 0px;
+    z-index: 5;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+.page_payment .credit-card-box .radio-group .check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    width: 8px;
+    height: 8px;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+.page_payment .credit-card-box .radio-group input[type=radio]:checked ~ .check {
+    border: 5px solid #ad1b3f;
+}
+.page_payment .credit-card-box .radio-group input[type=radio]:checked ~ .check::before {
+    background: #fff;
+}
+.page_payment .credit-card-box .radio-group input[type=radio]:checked ~ label {
+    color: #ad1b3f;
+}
+.page_payment .credit-card-box .radio-group .safemoney {
+    display: inline-block;
+    font-size: 14px;
+	font-weight: 300;
+    width: 100%;
+    padding: 0 30px;
+    color: #000
+}
+.page_payment .credit-card-box {
+    border: none;
+    background: #f5f5f5;
+	    box-shadow: none;
+}
+.page_payment .credit-card-box .panel-title {
+    display: inline;
+    font-weight: bold;
+}
+.page_payment .credit-card-box .form-control.error {
+    border-color: red;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+.page_payment .credit-card-box label {
+    display: block;
+    font-family: 'quarkbold';
+    text-transform: capitalize;
+	font-size:16px;
+}
+.page_payment .credit-card-box .cardNumber {
+    border-right: none;
+    box-shadow: none;
+}
+.page_payment .credit-card-box .credit-card {
+    border-left: none;
+    background: #fff;
+}
+.page_payment .credit-card-box .green {
+    border: 1px solid #90e4c0;
+}
+.page_payment .credit-card-box .red {
+    border: 1px solid #ad1b3f;
+}
+.page_payment .credit-card-box i.color-green {
+    color: #90e4c0;
+}
+.page_payment .credit-card-box i.color-red {
+    color: #ad1b3f;
+}
+.page_payment .credit-card-box .cv-code {
+    border-left: none;
+    background: #fff;
+}
+.page_payment .credit-card-box .cardCVC {
+    border-right: none;
+    box-shadow: none;
+}
+.page_payment .credit-card-box .display-table {
+    display: table;
+    width: 100%;
+    padding: 15px;
+    background: #f8f8f8;
+}
+.page_payment .credit-card-box .display-tr {
+    display: table-row;
+}
+.page_payment .credit-card-box .display-td {
+    display: table-cell;
+    vertical-align: middle;
+    // width: 50%;
+}
+.page_payment .credit-card-box .panel-heading img {
+    min-width: 150px;
+}
+.page_payment .credit-card-box .panel-body {
+    padding: 30px 30px;
+    background: #f8f8f8;
+}
+.page_payment .credit-card-box .display-tran {
+    background: #fff;
+    display: table;
+    width: 100%;
+    padding: 15px;
+	    border: none;
+}
+.page_payment .thank-detail {
+    background: #fff;
+    padding: 25px 15px;
+    margin-bottom: 25px;
+    border: 1px solid #eee;
+}
+.page_payment .thank-detail .list-detail-item {
+    font-family: 'quarkbold';
+}
+.page_payment .thank-detail .list-detail-item .list-itme > .table {
+    margin-bottom: 15px;
+}
+.page_payment .thank-detail .list-detail-item .list-itme .table>tbody>tr>td {
+	text-align: left;
+    border: none;
+    font-family: 'quarkbold';
+    font-size: 16px;
+}
+.page_payment .thank-detail .list-detail-item .list-itme .table>tbody>tr>td.title {} .page_payment .thank-detail .list-detail-item .list-itme .table>tbody>tr>td.qty {
+    min-width: 50px;
+}
+.page_payment .thank-detail .date-order {
+    text-align: right;
+    padding-top: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.page_payment .thank-detail .date-time {
+    text-align: right;
+    padding-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.page_payment .thank-detail .list-detail-item {
+    padding-top: 30px;
+}
+.page_payment .thank-detail .list-detail-item {} .page_payment .thank-detail .list-itme {
+    border-bottom: 1px dashed;
+}
+.page_payment .thank-detail .delivery {
+    padding-top: 30px;
+}
+.page_payment .thank-detail .delivery .delivery-text {
+    text-align: left;
+    display: block;
+    font-family: 'quarkbold';
+    font-size: 20px;
+}
+.page_payment .thank-detail .delivery .delivery-date {
+    text-align: left;
+    font-size: 16px;
+}
+.page_payment .thank-detail .summary {
+    padding-top: 30px;
+}
+.page_payment .thank-detail .summary .total-text {
+    text-align: left;
+    display: block;
+    font-family: 'quarkbold';
+    font-size: 20px;
+}
+.page_payment .thank-detail .summary .point-text {
+    font-size: 16px;
+    color: #a71a3c;
+}
+.page_payment .thank-detail .summary .total {
+    text-align: right;
+    display: block;
+    font-family: 'quarkbold';
+    font-size: 20px;
+}
+.page_payment .thank-detail .summary .point {
+	text-align: right;
+    color: #a71a3c;
+}
+.page_payment .bottom-title-text {
+    margin-top: 25px;
+    font-family: 'quarkbold';
+    text-align: center;
+}
+.page_payment .bottom-title-text > .btn {
+    letter-spacing: 1px;
+    border-radius: 7px;
+    background: #ad1b3f;
+    border: none;
+    font-size: 17px;
+}
+
+@media( max-width: 767px) {
+    .page_payment .payment-title {
+        padding: 15px;
+        font-size: 24px;
+    }
+    .m-full{
+      padding:0px;
+    }
+    .page_payment .credit-card-box{
+      margin:0px;
+    }
+	.page_payment .group-btn{
+		padding: 25px 0 0 0;
+	}
+
+    .page_payment .credit-card-box .display-tr{
+          display: block;
+    padding: 0 15px;
+    }
+    .page_payment .credit-card-box .radio-group .safemoney{
+      padding: 0 0 0 30px;
+      margin-bottom: 15px;
+    }
+    .page_payment .thank-detail{
+     width: 100%;
+    min-width: 100%;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 15px;
+     
+    }
+}

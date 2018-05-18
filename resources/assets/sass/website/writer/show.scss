@@ -1,0 +1,76 @@
+.sec-writer{
+	margin: 65px 0 35px;
+	p{
+		font-size: 16px;
+	}
+	@media (max-width: 768px) {
+		margin: 20px 0;
+	}
+}
+.wrap-writer{
+	background: #f8f8f8;
+	padding: 40px 20px;
+}
+.name-writer{
+	font-size: 24px;
+	color: #ad1b3f;
+	line-height: 1;
+	margin: 15px 0;
+	span{
+		font-size: 18px;
+		color: #b2b2b2;
+		display: block;
+	}
+}
+.book-list-detail{
+	display: flex;
+	margin-bottom: 15px;
+	@media (max-width: 768px) {
+		margin: 20px 0;
+		justify-content: center;
+	}
+}
+.detail-book{
+	font-size: 14px;
+	padding: 0 10px;
+	font-weight: 600;
+	display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+	p{
+		font-size: 14px;
+	}
+	.title{
+		line-height: 1.3em;
+		span{
+			font-size: 16px;
+		}
+	}
+	.normal-price{
+		span{
+			font-weight: 300;
+			text-decoration: line-through;
+		}
+	}
+	.member-price{
+		span{
+			font-weight: 300;
+		}
+	}
+}
+a.add-cart{
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 4px 10px;
+	border-radius: 15px;
+	background: #ad1b3f;
+	letter-spacing: 1px;
+	i{
+		font-size: 13px;
+	}
+	&:hover{
+		color: #fff;
+		text-decoration: none;
+	}
+}

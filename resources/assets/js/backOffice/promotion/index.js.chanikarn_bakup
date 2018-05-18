@@ -1,0 +1,28 @@
+/** 
+ * @author: Chanikarn Thavornwong
+ * @phone: 0909737246
+ * @email: ploid.t@gmail.com
+ */
+
+ $(function() {
+    $('.promotion-activation').bootstrapToggle({
+      on: '',
+      off: ''
+    });
+  })
+
+ $(function() {
+    $('.promotion-activation').change(function() {
+    	var id = $(this).parent().parent().attr('id');
+    	var splitedId = id.split('-');
+    	var promoNumber = splitedId[1];
+
+    	var checked = $(this).prop('checked');
+    	if(checked == false){
+    		$("#" + id + " span.toggle-handle").css("left","46px");
+    	}else{
+    		$("#" + id + " span.toggle-handle").css("left","20px");
+    	}
+      $('#promo-' + promoNumber).html(checked?"เปิด":"ปิด");
+    })
+  })

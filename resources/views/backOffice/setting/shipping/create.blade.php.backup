@@ -1,0 +1,296 @@
+{{--
+    @author: ระบุชื่อ-นามสกุลของคุณที่นี่
+    @phone: ระบุหมายเลขโทรศัพท์ของคุณที่นี่
+    @email: ระบุอีเมลของคุณที่นี่
+--}}
+
+@extends('layouts.backOffice.template')
+
+@section('head')
+	<link href="https://fonts.googleapis.com/css?family=Kanit:300,300i,400,400i,500,500i&amp;subset=latin-ext,thai,vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/backOffice/setting/shipping/create.css') }}">
+@endsection
+
+@section('body')
+<div class="container-fluid page-backoffice-shipping-create">
+
+    <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="box-header-white clearfix" style="">
+                    <div class="header-left clearfix" style=" ">
+                        <figure style="">
+                            <img src="{{asset('images/backOffice/shipping/shipping.png')}}" class="w-100" alt="">
+                        </figure>
+                        <a href="#" class="title active">
+                            Shipping
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12">
+            <div class="box-result" style="">
+                <div class="row">
+                    <div class="col-md-8 col-center">
+                        @if(!isset($edit))
+                        <form action="{{ route('backOffice.setting.shipping.store', ['type_id'=>$type_id]) }}" method="POST" class="form-horizontal form-shpping clearfix" role="form">
+                        {!! csrf_field() !!}
+                            <div class="form-group">
+                                <label for="input" class="col-sm-3 control-label">
+                                    ประเภทการส่ง
+                                </label>
+                                <div class="col-sm-5">
+                                    <select name="shippingType" id="input" class="form-control" required="required">
+                                        <option value="">--Please Select--</option>
+                                    @foreach($data['shippingTypes'] as $shippingType)
+                                        <option value="{{ $shippingType->id }}" @if($type_id == $shippingType->id) selected="selected" @endif>{{ $shippingType->name }}</option>
+                                    @endforeach
+                                    </select>
+                                </div>
+                            </div>
+
+                            @foreach($data['shippingRegions'] as $regionIndex => $shippingRegion)
+                            <div class="form-group">
+                                <label for="input" class="col-sm-3 geo control-label">
+                                    {{ $shippingRegion->region_name }}
+                                </label>
+                                <input type="text" id="region" name="region[{{$regionIndex}}][regionId]" class="hidden" value="{{ $shippingRegion->id }}"/>
+                                <div class="col-sm-9">
+                                    <div class="table-responsive table-shipping-create">
+                                        <table class="table" id="table{{ $regionIndex }}">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center">
+                                                        น้ำหนัก (กรัม)
+                                                    </th>
+                                                    <th class="text-center">
+                                                        ราคา
+                                                    </th>
+                                                    <th class="text-center">
+                                                        แลกแต้ม
+                                                    </th>
+                                                    <th class="text-center">
+                                                        <a href="javascript:;">
+                                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                        </a>
+
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-right">
+														<input type="hidden" name="shippingFee[{!! $regionIndex !!}][][minWeight]" value="0">
+                                                        <span class="minWeight">0</span>
+														-​
+                                                        <span class="border-sm">
+                                                            <input type="number" min="0" name="shippingFee[{!! $regionIndex !!}][][maxWeight]" value="">
+                                                        </span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <span class="border-sm">
+                                                            <input type="number" min="0" name="shippingFee[{!! $regionIndex !!}][][amount]" value="">
+                                                        </span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <span class="border-sm">
+                                                            <input type="number" min="0" name="region[{{$regionIndex}}][shippingFee][][point]" value="">
+                                                        </span>
+                                                    </td>
+                                                    <td class="hidden">
+                                                        <a class="border-sm" href="javascript:;" class="delRow">
+                                                            <img style="" src="{{asset('images/backOffice/shipping/bin.png')}}" alt="Delete">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-left" colspan="4">
+                                                        <a href="javascript:void(0);" onClick="AddShippingFee({{ $regionIndex }});">
+                                                            <span class="icon">
+                                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                                            </span>
+
+                                                            เพิ่มเงื่อนไขราคาค่าขนส่ง
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+												<tr>
+                                                    <td class="text-right">
+														<input type="hidden" name="shippingFee[{!! $regionIndex !!}][][minWeight]" value="0">
+														<input type="hidden" name="shippingFee[{!! $regionIndex !!}][][maxWeight]" value="null">
+                                                        <span class="minWeight">0</span>
+														<span class="maxWeight" style="width: 71px;display: inline-block;text-align: left;">ขึ้นไป</span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <span class="border-sm">
+                                                            <input type="number" min="0" name="shippingFee[{!! $regionIndex !!}][][amount]" value="">
+                                                        </span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <span class="border-sm">
+                                                            <input type="number" min="0" name="shippingFee[{!! $regionIndex !!}][][point]" value="">
+                                                        </span>
+                                                    </td>
+                                                    <td class="hidden">
+                                                        <a class="border-sm" href="javascript:;" class="delRow">
+                                                            <img style="" src="{{asset('images/backOffice/shipping/bin.png')}}" alt="Delete">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+
+											</tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+                        @else
+                        <form action="{{ route('backOffice.setting.shipping.update', $data['shippingFees']->first()->type_id) }}" method="POST" class="form-horizontal form-shpping clearfix" role="form">
+                        {!! csrf_field() !!}
+                        {!! method_field('PATCH') !!}
+                            <div class="form-group">
+                                <label for="input" class="col-sm-3 control-label">
+                                    ประเภทการส่ง
+                                </label>
+                                <div class="col-sm-5">
+                                    <select name="shippingType" id="input" class="form-control" required="required">
+                                    @foreach($data['shippingTypes'] as $shippingType)
+                                        <option value="{{ $shippingType->id }}" {{ $shippingType->id == $data['shippingFees']->first()->type_id  ? 'select' : '' }} >{{ $shippingType->name }}</option>
+                                    @endforeach
+                                    </select>
+                                </div>
+                            </div>
+                            @foreach($data['shippingRegions'] as $regionIndex => $shippingRegion)
+                            <div class="form-group">
+                                <label for="input" class="col-sm-3 geo control-label">
+                                    {{ $shippingRegion->region_name }}
+                                </label>
+                                <input type="text" id="region" name="region[{{$regionIndex}}][regionId]" class="hidden" value="{{ $shippingRegion->id }}"/>
+                                <div class="col-sm-9">
+                                    <div class="table-responsive table-shipping-create">
+                                        <table class="table" id="table{{ $regionIndex }}">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center">
+                                                        น้ำหนัก (กรัม)
+                                                    </th>
+                                                    <th class="text-center">
+                                                        ราคา
+                                                    </th>
+                                                    <th class="text-center">
+                                                        แลกแต้ม
+                                                    </th>
+                                                    <th class="text-center">
+                                                        <a href="javascript:;">
+                                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                        </a>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            @foreach($data['shippingFees']->where("region_id", $shippingRegion->id ) as $feeIndex => $shippingFee)
+                                            <input type="hidden" name="region[{{$regionIndex}}][shippingFee][0][id]" value="{{ $shippingFee->id }}">
+                                                <tr>
+                                                    <td class="text-right">
+                                                    {{ isset($data['shippingFees'][$feeIndex-1]) ? $data['shippingFees'][$feeIndex-1]->maximum_weight : 0 }} -
+                                                        <span class="border-sm">
+                                                            <input type="number" min="0" name="region[{{$regionIndex}}][shippingFee][0][maxWeight]" value="{{ $shippingFee->maximum_weight }}" onkeyup="ChangeMaxWeight(this)">
+                                                        </span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <span class="border-sm">
+                                                            <input type="number" min="0" name="region[{{$regionIndex}}][shippingFee][0][amount]" value="{{ $shippingFee->amount }}">
+                                                        </span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <span class="border-sm">
+                                                            <input type="number" min="0" name="region[{{$regionIndex}}][shippingFee][0][point]" value="{{ $shippingFee->point_redemption }}">
+                                                        </span>
+                                                    </td>
+                                                    <td class="hidden">
+                                                        <a class="border-sm" href="javascript:;" onClick="AddShippingFee({{ $regionIndex }});">
+                                                            <img style="" src="{{asset('images/backOffice/shipping/bin.png')}}" alt="Delete">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                @endforeach
+                                                <tr>
+                                                    <td class="text-left" colspan="4">
+                                                        <a href="javascript:void(0);" onClick="AddShippingFee({{ $regionIndex }});">
+                                                            <span class="icon">
+                                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                                            </span>
+
+                                                            เพิ่มเงื่อนไขราคาค่าขนส่ง
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+                        @endif
+                            <div class="form-group">
+                                <div class="col-sm-12 text-center">
+                                    <button type="submit" class="btn btn-save">save</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+@endsection
+
+@section('script')
+
+<script src="{{ asset('js/backOffice/setting/shipping/create.js') }}"></script>
+
+<script>
+
+	$(function() {
+
+		toastr.options = {
+			"closeButton": true,
+			"debug": false,
+			"newestOnTop": true,
+			"positionClass": "toast-top-center",
+			"preventDuplicates": false,
+			"onclick": null,
+			"showDuration": "3000",
+			"hideDuration": "1000",
+			"timeOut": "5000",
+			"extendedTimeOut": "1000",
+			"showEasing": "swing",
+			"hideEasing": "linear",
+			"showMethod": "fadeIn",
+			"hideMethod": "fadeOut"
+		}
+	@if(session()->has('success'))
+		toastr["success"]("{{ session()->get('success') }}", "Success");
+	@elseif(session()->has('warning'))
+		toastr["warning"]("{{ session()->get('warning') }}", "Warning");
+	@endif
+	@if ($errors->any())
+		@foreach ($errors->all() as $error)
+		toastr["error"]("{{ $error }}", "Error");
+		@endforeach
+	@endif
+	});
+</script>
+@endsection

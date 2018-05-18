@@ -1,0 +1,314 @@
+{{--
+    @author: 
+    @phone: 
+    @email: 
+--}}
+
+@extends('layouts.backOffice.template')
+
+@section('head')
+    <link rel="stylesheet" href="{{ asset('css/backOffice/promotion/inde.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:100,300,400" rel="stylesheet">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css" rel="stylesheet">
+@endsection
+
+@section('body')
+    <div class="container-fluid backoffice-promotion-create">
+      <div class="pop-up">
+        <div class="panel panel-default">
+          <div class="form-group">
+            <label for="condition_name">ชื่อ Condition Group</label>
+            <input type="text" name="condition_name" id="condition_name">
+          </div>
+          <div class="form-group">
+            <button type="button" class="button-save">Save</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="section-header">
+          <img src="{{ asset('images/backOffice/promotion/header-icon-promotion.png')}}">
+          <span class="pagination-previous">Promotion</span>
+          <span class="pagination-now">/ TEST</span>
+        </div>
+
+
+
+        <div class="section-body">
+          <form>
+            <div class="benefits">
+              <div class="benefits-header"></div>
+              <ul>
+                <div class="row">
+                  <li>
+                    <div class="col-md-4 col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label col-md-4" for="credit">วันเกิดรับส่วนลด</label>
+                        <div class="col-md-8">
+                          <input type="text" name="credit" id="credit" class="half">
+                          <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                              บาท
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>%</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </li>
+                </div>
+                <div class="row">
+                  <li>
+                    <div class="col-md-4 col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label col-md-4">เดือนเกิดรับส่วนลด</label>
+                        <div class="col-md-8">
+                          <input type="text" name="credit" id="credit" class="half">
+                          <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                              บาท
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>%</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label col-md-3">เริ่มวันที่</label>
+                          <div class="col-md-6">
+                            <div class="input-group date" data-provide="datepicker">
+                              <input type="text" class="form-control" id="date_form">
+                                <div class="input-group-addon">
+                                  <span class="glyphicon glyphicon-calendar"></span>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label col-md-4">สิ้นสุดวันที่</label>
+                          <div class="col-md-6">
+                            <div class="input-group date" data-provide="datepicker">
+                              <input type="text" class="form-control" id="date_form">
+                                <div class="input-group-addon">
+                                  <span class="glyphicon glyphicon-calendar"></span>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+                <div class="row">
+                  <li>
+                    <div class="col-md-4 col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label col-md-4" for="credit">อังคารที่ 2 ของทุกเดือน รับส่วนลด</label>
+                        <div class="col-md-8">
+                          <input type="text" name="credit" id="credit" class="half">
+                          <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                              บาท
+                             
+                            </button> 
+                            <ul class="dropdown-menu">
+                              <li>%</li>
+                            </ul>
+
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                      <span>ซื้อและทำการโอนเงินภายในวันเท่านั้น ถ้าไม่โอนเงินภายในวันที่กำหนด ระบบจะทำการยกเลิก ORDER ทันที</span>
+                    </div>
+                  </li>
+                </div>
+                <div class="row">
+                  <li>
+                    <div class="col-md-4 col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label col-md-4" for="credit">ซื้อครบจำนวน</label>
+                        <div class="col-md-8">
+                          <input type="text" name="credit" id="credit" class="half">
+                          <span>เล่ม</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                      <label class="control-label col-md-3" for="credit">แถมหนังสือ</label>
+                      <div class="col-md-9">
+                        <div class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                              หนังสือ 1
+                          </button> 
+                          <ul class="dropdown-menu">
+                            <li></li>
+                          </ul>
+                        </div><span >เลือกเล่มถูกสุดในการแถม</span>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+                <div class="row">
+                  <li>
+                    <div class="col-md-4 col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label col-md-4" for="credit">ซื้อครบ</label>
+                        <div class="col-md-8">
+                          <input type="text" name="credit" id="credit" class="half">
+                          <span>บาท</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                      <label class="control-label col-md-2" for="credit">น้ำหนักไม่เกิน</label>
+                      <div class="col-md-10">
+                        <input type="text" name="credit" id="credit" class="half">
+                        <span>กิโลกรัม</span>  
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                      <label class="control-label col-md-2" for="credit">ได้รับ</label>
+                      <div class="col-md-8">
+                        <span>ส่งสินค้าลงทะเบียนฟรี</span>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+                <div class="row">
+                  <li>
+                    <div class="col-md-4 col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label col-md-4" for="credit">ซื้อครบ</label>
+                        <div class="col-md-8">
+                          <input type="text" name="credit" id="credit" class="half">
+                          <span>บาท</span>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="col-md-4 col-xs-12">
+                        <label class="control-label col-md-2" for="credit">ได้รับ</label>
+                        <div class="col-md-6">
+                          <span>ส่งสินค้าลงทะเบียนฟรี</span>
+                        </div>
+                      </div>
+                  </li>
+                </div>
+                <div class="row">
+                  <li>
+                    <div class="col-md-4 col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label col-md-5 col-xs-12">จากวันที่</label>
+                          <div class="col-md-3">
+                            <div class="input-group date" data-provide="datepicker">
+                              <input type="text" class="form-control" id="date_form">
+                                <div class="input-group-addon">
+                                  <span class="glyphicon glyphicon-calendar"></span>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-xs-12">สิ้นสุดวันที่</label>
+                          <div class="col-md-3">
+                            <div class="input-group date" data-provide="datepicker">
+                              <input type="text" class="form-control" id="date_form">
+                                <div class="input-group-addon">
+                                  <span class="glyphicon glyphicon-calendar"></span>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <label class="control-label col-md-2" for="credit">ได้รับ</label>
+                        <div class="col-md-9">
+                          <span>Double Point</span>
+                        </div>
+                      </div>
+                  </li>
+                </div>
+
+                <!-- <div class="row">
+                  <li>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label col-md-4  col-sm-12">เดือนเกิดรับส่วนลด</label>
+                        <div class="col-md-8  col-sm-12">
+                          <input type="text" name="credit" id="credit" class="half">
+                          <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                              บาท
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>%</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-sm-12 col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-12">เริ่มวันที่</label>
+                          <div class="col-md-6 col-sm-12">
+                            <div class="input-group date" data-provide="datepicker">
+                              <input type="text" class="form-control" id="date_form">
+                                <div class="input-group-addon">
+                                  <span class="glyphicon glyphicon-calendar"></span>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-sm-12 col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label col-md-4 col-sm-12">สิ้นสุดวันที่</label>
+                          <div class="col-md-6 col-sm-12">
+                            <div class="input-group date" data-provide="datepicker">
+                              <input type="text" class="form-control" id="date_form">
+                                <div class="input-group-addon">
+                                  <span class="glyphicon glyphicon-calendar"></span>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </li>
+                </div> -->
+
+              </ul>
+            </div>
+
+            <div class="submit">
+              <div class="form-group">
+                <button type="button" class="button-save" name="save">Save</button>
+                <button type="button" class="button-cancel" name="cancel">Cancel</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>  
+@endsection
+
+@section('script')
+    <script src="{{ asset('js/backOffice/promotion/index.js') }}"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+@endsection

@@ -1,0 +1,431 @@
+/**
+ * @author: ระบุชื่อ-นามสกุลของคุณที่นี่
+ * @phone: ระบุหมายเลขโทรศัพท์ของคุณที่นี่
+ * @email: ระบุอีเมลของคุณที่นี่
+ */
+
+$promotion-stroke: #d0cfcf;
+$promotion-border-color: #a1a1a1;
+$promotion-border-radius: 3px;
+
+$promotion-black: #000;
+$promotion-white: #fff;
+$promotion-red: #980f0e;
+$promotion-gray: #b4b4b4;
+$promotion-dark-gray: #2b2b29;
+$promotion-font-color: #686868;
+
+.backoffice-promotion-create {
+  padding-top: 15px;
+  font-family: 'Kanit', sans-serif !important;
+
+  @media screen and (max-width: 1023px) {
+    padding: 15px;
+  }
+
+  .form-group {
+    margin: 0;
+  }
+
+  .panel-default {
+    border: 1px solid $promotion-stroke;
+  }
+
+  .last {
+    margin-bottom: 0 !important;
+  }
+
+  .verticle-middle {
+    text-align: center !important;
+  }
+
+  input, select, textarea {
+    outline: none;
+    padding: 6px 10px 3px;
+    background-color: $promotion-white;
+    border-radius: $promotion-border-radius;
+    border: 1px solid $promotion-border-color;
+  }
+
+  button {
+    min-width: 110px;
+    padding: 5px 0;
+    margin: 0 15px;
+    color: $promotion-white;
+    border: none;
+    border-radius: $promotion-border-radius;
+    outline: none;
+
+    &.button-save {
+      background-color: $promotion-red;
+
+      &:hover {
+        background-color: #e0252c;
+      }
+
+      &:active {
+        background-color: #ce1a1d;
+      }
+    }
+
+    &.button-cancel {
+      background-color: $promotion-dark-gray;
+
+      &:hover {
+        background-color: #1a191f;
+      }
+
+      &:active {
+        background-color: #3d3e40;
+      }
+    }
+
+    @media screen and (max-width: 1023px) {
+      margin: 0;
+    }
+  }
+}
+
+.panel-default .section-header {
+  padding: 20px 30px;
+  border-bottom: 1px solid $promotion-stroke;
+  font-size: 1.3em;
+  font-weight: bold;
+
+  @media screen and (max-width: 1023px) {
+    padding: 15px 20px;
+  }
+
+  span {
+    vertical-align: bottom;
+
+    &.pagination-previous {
+      color: $promotion-gray;
+      padding-left: 10px;
+    }
+
+    &.pagination-now {
+      color: $promotion-black;
+    }
+  }
+}
+
+.pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 9999;
+  display: none;
+
+  @media screen and (max-width: 1023px) {
+    width: 90%;
+  }
+
+  .panel-default {
+    padding: 50px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20%;
+    text-align: center;
+
+    input, select {
+      display: block;
+      width: 100%;
+      margin: 15px 0 20px;
+      padding: 3px 10px 6px;
+    }
+  }
+}
+
+.panel-default .section-body {
+  padding: 0 30px;
+
+  @media screen and (max-width: 1023px) {
+    padding: 0 20px;
+  }
+
+  .information, .conditions, .benefits {
+    padding: 20px 0;
+    border-bottom: 1px solid $promotion-stroke;
+  }
+
+  .information {
+    .input {
+      margin-bottom: 20px;
+    }
+
+    input, textarea {
+      width: 80%;
+
+      @media screen and (max-width: 1023px) {
+        width: 100%;
+      }
+    }
+
+    #date_form, #date_to {
+      min-width: 100%;
+    }
+
+    #limit {
+      width: 80%;
+    }
+
+    .switch {
+      .toggle.btn.btn-success {
+        width: 85px !important;
+      }
+
+      .toggle.btn.btn-danger.off {
+        width: 85px !important;
+      }
+
+      .btn-danger.active {
+        background-color: $promotion-dark-gray;
+
+        &:hover {
+          border-color: $promotion-dark-gray;
+        }
+      }
+
+      span.toggle-handle.btn.btn-default {
+        width: 40px;
+        margin-left: 44px;
+        background: radial-gradient(ellipse at center, rgb(255,255,255) 0%,
+          rgb(243,243,243) 50%,rgb(237,237,237) 51%,rgb(255,255,255) 100%);
+      }
+
+      span {
+        padding-left: 10px;
+      }
+    }
+
+    .btn-success {
+      background-color: #7acf28;
+    }
+
+    .toggle-handle {
+      height: 80%;
+      margin: 3px 0;
+      width: 50px;
+      border-radius: 3px;
+      opacity: 1;
+    }
+
+    .toggle.btn {
+      border-radius: 4px;
+      min-width: 60px;
+    }
+  }
+
+  .conditions {
+    .row {
+      margin: 0;
+      position: relative;
+
+      @media screen and (min-width: 1023px) {
+        max-height: 71px;
+      }
+
+      .details {
+        border-left: 1px solid #e4e4e4;
+      }
+
+      .condition-actions {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        .edit, .delete {
+          border: 1px solid $promotion-border-color;
+          border-radius: $promotion-border-radius;
+          margin: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .conditions-header {
+      color: $promotion-font-color;
+      margin-bottom: 20px;
+      position: relative;
+
+      .condition-add {
+        position: absolute;
+        right: 0;
+        top: -5px;
+        text-align: center;
+        cursor: pointer;
+        -webkit-touch-callout: none; /* iOS Safari */
+          -webkit-user-select: none; /* Safari */
+           -khtml-user-select: none; /* Konqueror HTML */
+             -moz-user-select: none; /* Firefox */
+              -ms-user-select: none; /* Internet Explorer/Edge */
+                  user-select: none; /* Non-prefixed version, currently
+                                        supported by Chrome and Opera */
+
+        .main {
+          color: $promotion-white;
+          border-radius: $promotion-border-radius;
+          background-color: #a1a1a1;
+          padding: 5px 8px 4px;
+
+          &:hover {
+            background-color: darken(#a1a1a1, 5%);
+          }
+
+          &:active {
+            background-color: darken(#a1a1a1, 10%);
+          }
+
+          img {
+            max-width: 25px;
+            width: 100%;
+            filter: brightness(200%);
+          }
+
+          span {
+            padding: 0 3px;
+          }
+
+          .icon {
+            color: $promotion-font-color;
+          }
+        }
+
+        .list {
+          position: absolute;
+          list-style: none;
+          text-align: center;
+          padding: 0;
+          width: 100%;
+          z-index: 5;
+          background-color: $promotion-white;
+          border: 1px solid #a1a1a1;
+          border-radius: $promotion-border-radius;
+          display: none;
+
+          li {
+            padding: 5px 8px 4px;
+            border-bottom: 1px solid #a1a1a1;
+
+            &:last-child {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+
+    .condition-selective {
+      width: 100%;
+      background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 47%, #f5f5f5 100%);
+      border: 1px solid #e4e4e4;
+      border-radius: $promotion-border-radius;
+
+      .verticle-middle {
+        padding: 25px 0;
+
+        @media screen and (min-width: 1023px) {
+          width: 50px;
+        }
+      }
+    }
+
+    .condition-selective-option {
+      width: 45%;
+      display: inline-block;
+      padding: 25px 15px;
+
+      @media screen and (max-width: 1023px) {
+        width: 100%;
+        padding: 9px 15px;
+      }
+
+      .condition-title {
+        color: $promotion-red;
+      }
+    }
+  }
+
+  .benefits {
+    .benefits-header {
+      color: $promotion-font-color;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding: 0 30px;
+      .row {
+        margin-bottom: 20px;
+      }
+    }
+
+    input, select {
+      min-width: 110px;
+      max-width: 110px;
+      height: 38px;
+      background-color: $promotion-white;
+      border-radius: $promotion-border-radius;
+      border: 1px solid $promotion-border-color;
+      vertical-align: middle;
+      display: inline-block;
+
+      @media screen and (max-width: 1023px) {
+        min-width: 90%;
+        max-width: 90%;
+      }
+    }
+
+    textarea {
+      width: 100%;
+    }
+
+    .other {
+      padding-left: 6%;
+    }
+
+    #credit {
+      margin-left: 11%;
+    }
+
+    #no_max_discount, #max_discount, #total_quantity {
+      min-width: 110px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      .sub-detail {
+        padding: 8px 7px 0;
+      }
+
+      .half {
+        min-width: 45%;
+        max-width: 45%;
+      }
+
+      .other {
+        padding-left: 0;
+      }
+
+      #credit {
+        margin-left: 0;
+      }
+
+      #point_total {
+        margin-top: 20px;
+      }
+
+      #discount_max, #point_total, #no_max_discount, #total_quantity, #credit_max {
+        min-width: 80%;
+        max-width: 80%;
+      }
+    }
+  }
+
+  .submit {
+    padding: 20px 0;
+    text-align: center;
+  }
+}

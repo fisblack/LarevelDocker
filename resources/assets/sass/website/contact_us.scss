@@ -1,0 +1,126 @@
+.page_contact_us {
+    color: #666;
+}
+.bg-contact {
+    background: url('../../images/07_contact_us/bg-contact.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 450px;
+}
+.page_contact_us .header-title {
+    padding: 40px 0;
+    width: 80%;
+}
+.page_contact_us .header-title .title {
+    font-size: 36px;
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: 'Quarkbold';
+    color: #444;
+    width: 100%;
+
+    
+}
+.page_contact_us .header-title .desc {
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 22px;
+    max-height: 44px;
+}
+.page_contact_us .row-relative {
+    position: relative;
+}
+.page_contact_us .group-map {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    width: 80%;
+    left: 0;
+    right: 0;
+}
+.page_contact_us .group-map #map {
+    height: 350px;
+}
+.page_contact_us .group-map #list-detail {
+    background: #f8f8f8;
+    height: 350px;
+    position: relative;
+}
+.page_contact_us .group-map #list-detail .title {
+    margin: 0;
+    padding: 30px 0;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: 'Quarkbold';
+    color: #444;
+}
+.page_contact_us .group-map #list-detail ul.list-detail {
+    margin: 0 0 20px;
+}
+.page_contact_us .group-map #list-detail ul.list-detail li {
+    padding-bottom: 20px;
+}
+.page_contact_us .group-map #list-detail ul.list-detail li .icon {
+    float: left;
+    width: 10%;
+    text-align: center;
+}
+.page_contact_us .group-map #list-detail ul.list-detail li .icon i {} .page_contact_us .group-map #list-detail ul.list-detail li .detail {
+    float: left;
+    width: 80%;
+    padding-left: 15px;
+}
+.page_contact_us .group-map #list-detail ul.list-detail li .detail.red{
+    color: #ad1b40;
+    font-weight: 600;
+}
+.page_contact_us .group-map #list-detail ul.list-logo {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.page_contact_us .group-map #list-detail ul.list-logo li {
+    padding: 15px;
+}
+.page_contact_us .group-map #list-detail ul.list-logo li .icon{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 20px;
+    background: #fff;
+}
+.page_contact_us .group-map #list-detail ul.list-logo li .icon i{
+    color: #666;
+    font-size: 17px;
+    height: auto;
+    display: inline-block;
+}
+@media( max-width:768px) {
+    .page_contact_us .header-title {
+        width: 100%;
+        padding: 15px 0;
+    }
+    .bg-contact {
+        height: auto;
+        background-size: 0;
+    }
+    .page_contact_us .group-map {
+        position: relative;
+        width: 100%;
+        padding: 0;
+    }
+    .page_contact_us .group-map #list-detail .title {
+        text-align: center;
+        padding: 15px 0;
+    }
+    .page_contact_us .group-map #list-detail {
+        height: 100%;
+    }
+}

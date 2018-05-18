@@ -1,0 +1,216 @@
+/** 
+ * @author: MR.SOMPOB MOONSRI (Nick)
+ * @phone: 0811129499
+ * @email: eslidiingz@gmail.com
+ */
+
+ // Variables
+ $primary-color: #980f0e;
+ $white-color: #ffffff;
+
+ $form-border-color: #e5e5e5;
+
+ $btn-primary-color: $primary-color;
+ $btn-secondary-color:  #353432;
+
+ $text-secondary-color: #8e8e8e;
+
+ @import url('https://fonts.googleapis.com/css?family=Kanit:400,600');
+
+ body {
+   font-family: 'Kanit', sans-serif !important;
+ }
+
+ .btn {
+     border-radius: 4px;
+     padding-left: 20px;
+     padding-right: 20px;
+     border: none;
+
+     &:hover, &:active, &:focus {
+       border: none;
+     }
+   }
+
+ .btn-primary {
+   background-color: #DB2828;
+   outline: none;
+
+   &:hover {
+      background-color: #DD272B;
+   }
+
+   &:active, &:active:hover, &:focus, &:active:focus {
+     background-color: #D0191D;
+     opacity: 1;
+     border: none;
+     outline: none;
+   }
+ }
+
+ .btn-default {
+   background-color: $btn-secondary-color;
+   color: $white-color;
+
+   &:hover {
+     background-color: #1A191E;
+     color: $white-color;
+     opacity: 1;
+     outline: none;
+   }
+
+   &:active, &:active:hover, &:focus, &:active:focus {
+    background-color: #3D3E40;
+    color: $white-color;
+    outline: none;
+   }
+ }
+
+ .wrapper {
+   padding: 15px;
+
+   .panel-container {
+     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+     
+     .panel-heading {
+       background-color: #fff;
+
+       .panel-title {
+         font-size: 18px;
+         text-transform: capitalize;
+         font-weight: normal;
+       }
+     }
+
+     .panel-form {
+       border: 1px solid $form-border-color;
+       box-shadow: 0 4px 10px $form-border-color;
+
+        .title {
+          font-size: 18px;
+        }
+
+       .panel-heading {
+        background-color: #dbdbdb;
+        -webkit-print-color-adjust: exact;
+       }
+
+       .shipping {
+        p {
+          color: $text-secondary-color;
+        }
+
+        .order {
+          span {
+            color: $primary-color;
+            font-weight: bold;
+          }
+        }
+       }
+     }
+
+     .panel-footer {
+      .detail-content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .detail-container {
+        border: 1px solid $form-border-color;
+        padding: 15px;
+        border-radius: 2px;
+        background: #ffffff; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(#ffffff, #f7f7f8); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#ffffff, #f7f7f8); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#ffffff, #f7f7f8); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#ffffff, #f7f7f8); /* Standard syntax */
+
+        .cover {
+          img {
+            width: 100%;
+          }
+        }
+
+        .subject {
+
+        }
+
+        .quantity {
+
+        }
+
+        .point-reward {
+          color: $text-secondary-color;
+        }
+
+        .price {
+          color: $primary-color;
+          text-align: center;
+          font-size: 18px;
+
+          label {
+            color: $text-secondary-color;
+            display: block;
+            font-size: 14px;
+            margin: 0;
+          }
+        }
+      }
+     }
+
+     .btn-print {
+      margin-top: 60px;
+      margin-bottom: 60px;
+     }
+   }
+ }/** 
+ * @author: ระบุชื่อ-นามสกุลของคุณที่นี่
+ * @phone: ระบุหมายเลขโทรศัพท์ของคุณที่นี่
+ * @email: ระบุอีเมลของคุณที่นี่
+ */
+
+
+ @media print
+{
+    .row{
+        display: block
+    }
+  .col-sm-2{
+    width: 15%;
+    display: inline-block;
+    img{
+        width: 100%;
+    }
+  }
+  .col-sm-6{
+    width: auto;
+    display: inline-block;
+  }
+  .col-sm-4{
+      position: relative;
+    width: auto;
+    display: inline-block;
+    .price{
+
+        // display: flex;
+    }
+  }
+  figure{
+      margin: 0;
+  }
+  .p-b-a{
+    page-break-after: always;
+  }
+  .p-b-b{
+    page-break-before: always;
+  }
+  .wrapper .panel-container .panel-form .panel-heading {
+    background-color: #dbdbdb !important; 
+    -webkit-print-color-adjust: exact;
+    // color: red;
+  }
+  .wrapper .panel-container .panel-footer .detail-container .price {
+    color: #980f0e !important; 
+    -webkit-print-color-adjust: exact;
+  }
+}

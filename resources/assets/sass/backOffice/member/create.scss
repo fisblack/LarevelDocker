@@ -1,0 +1,192 @@
+/** 
+ * @author: ระบุชื่อ-นามสกุลของคุณที่นี่
+ * @phone: ระบุหมายเลขโทรศัพท์ของคุณที่นี่
+ * @email: ระบุอีเมลของคุณที่นี่
+ */
+
+
+
+
+
+
+
+
+
+
+
+.page-backoffice-member-add {
+    padding-top: 30px;
+}
+.page-backoffice-member-add .box-header-white {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.page-backoffice-member-add .box-header-white .header-left {
+    display: inline-block;
+    float: left;
+    line-height: 61px;
+    padding-left: 20px;
+}
+.page-backoffice-member-add .box-header-white .header-left figure {
+    display: inline-block;
+    margin-right: 15px;
+}
+.page-backoffice-member-add .box-header-white .header-left .title {
+    color: #8e8e8e;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+}
+.page-backoffice-member-add .box-header-white .header-left .title.active {
+    color: #000;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+}
+.page-backoffice-member-add .box-result {
+    background: #fff;
+    padding: 40px;
+}
+.page-backoffice-member-add .box-result .form-writers {
+    font-family: 'Kanit', sans-serif;
+}
+.page-backoffice-member-add .box-result .form-writers .form-control {
+    border-radius: 4px
+}
+.page-backoffice-member-add .box-result .form-writers .author {
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+}
+.page-backoffice-member-add .box-result .form-writers .control-label {
+    text-align: left;
+}
+.page-backoffice-member-add .box-result .form-writers .control-label.two {
+    text-align: center;
+}
+.page-backoffice-member-add .box-result .form-writers .group-imge {
+    margin-top: 15px;
+}
+.page-backoffice-member-add .box-result .form-writers .btn-save,
+.page-backoffice-member-add .box-result .form-writers .btn-cancel,
+.page-backoffice-member-add .box-result .form-writers .btn-browse {
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: none;
+    border: none;
+    vertical-align: baseline;
+    background: #E0E1E2 none;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    margin: 0em 0.25em 0em 0em;
+    padding: 0.78571429em 1.5em 0.78571429em;
+    text-transform: none;
+    text-shadow: none;
+    font-weight: bold;
+    line-height: 1em;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.28571429rem;
+    box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+    transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+    will-change: '';
+    -webkit-tap-highlight-color: transparent;
+}
+.page-backoffice-member-add .box-result .form-writers .btn-save {
+    text-transform: capitalize;
+    background-color: #DB2828;
+    color: #FFFFFF;
+    text-shadow: none;
+    background-image: none;
+}
+.page-backoffice-member-add .box-result .form-writers .btn-save:hover {
+    background-color: #d01919;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+.page-backoffice-member-add .box-result .form-writers .btn-cancel {
+    text-transform: capitalize;
+    background-color: #1B1C1D;
+    color: #FFFFFF;
+    text-shadow: none;
+    background-image: none;
+}
+.page-backoffice-member-add .box-result .form-writers .btn-cancel:hover {
+    background-color: #2f3032;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+.page-backoffice-member-add .box-result .form-writers .input-bot {
+    margin-bottom: 4px;
+}
+.page-backoffice-member-add .box-result .form-writers .btn-browse {
+    background: #980f0e;
+    color: #fff;
+    padding: 0 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    border-radius: 4px;
+    line-height: 38px;
+    margin: 0;
+    border-radius: 0;
+}
+@media (max-width: 767px) {
+    .page-backoffice-member-add .box-result .form-writers .control-label {
+        text-align: left;
+    }
+    .page-backoffice-member-add .box-result .form-writers .control-label.two {
+        text-align: left;
+    }
+}
+.toggle.sw-toggle {
+    border-radius: 3px;
+}
+.toggle.sw-toggle .btn-success {
+    border: 1px solid #0f9b0f;
+    background-color: #7acf28;
+    color: transparent;
+}
+.toggle.sw-toggle .btn-danger {
+    background: #2b2b29;
+    color: transparent;
+}
+.toggle.sw-toggle .toggle-handle {
+    width: 22px;
+    height: 14px;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+    position: absolute;
+    left: 20px;
+    top: 2.5px;
+}
+.toggle.sw-toggle .btn-default,
+.toggle.sw-toggle .btn-default:hover {
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
