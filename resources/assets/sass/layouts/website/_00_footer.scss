@@ -46,17 +46,23 @@
 }
 .footer ul.fasq {
     margin-bottom: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
 }
 .footer ul.fasq li {
-    width: 48%;
+    /*width: 48%;*/
     padding: 0 0 20px 0;
 }
 .footer ul.fasq li .blogimg {
-    float: left;
-    width: 40%;
-    padding-right: 15px;
-    margin-top: 4px;
-    text-align: right;
+    /*float: left;*/
+    /*width: 40%;*/
+    /*padding-right: 15px;*/
+    /*margin-top: 4px;*/
+    /*text-align: right;*/
 }
 .footer ul.fasq li .blogimg >img {
     // width: 30px;

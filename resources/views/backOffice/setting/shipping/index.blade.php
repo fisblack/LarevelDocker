@@ -149,15 +149,15 @@
                             <td class="first" >
                                 <input type="checkbox" name="wri[]" value="{!! $shippingFee->id !!}" id="wri_1">
                             </td>
-                            <td class="second text-left" style="">
+                            <td class="second text-left zone" style="">
                                 <ul class="list-unstyled" >
                                     <li>
-                                        <strong>ภาค:</strong>
+                                        <!-- <strong>ภาค:</strong> -->
                                         <span> {{ $data['shippingRegions']->find($shippingFee->region_id)->region_name }}</span>
                                     </li>
                                 </ul>
                             </td>
-                            <td class="second text-center" style="">
+                            <td class="second weight" style="">
                                 <ul class="list-unstyled" >
                                     <li>
                                     @php ($minWeight = 0)
@@ -171,7 +171,7 @@
                                     </li>
                                 </ul>
                             </td>
-                            <td class="second text-center" style="">
+                            <td class="second price text-center" style="">
                                 <ul class="list-unstyled" >
                                     <li>
                                         <strong>ราคา:</strong>
@@ -188,7 +188,7 @@
                                     </li>
                                 </ul>
                             </td>
-                            <td class="second text-center" style="">
+                            <td class="second status text-center" style="">
                                 <ul class="list-unstyled" >
                                     <li>
                                         <strong class="active">Active</strong>
