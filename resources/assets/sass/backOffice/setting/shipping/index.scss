@@ -85,7 +85,12 @@
 		    border: none;
 			    border-bottom: 1px solid #e5e5e5;
 }
-
+.page-backoffice-shipping .box-result table tbody>tr {
+    td.zone,
+    td.weight{
+        width: 22%;
+    }
+}
 
 .page-backoffice-shipping .box-result table tbody>tr>td.second ul {
     display: inline-block;

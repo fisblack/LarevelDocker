@@ -49,12 +49,12 @@
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
                         <ul class="fasq list-inline clearfix">
-                            <li >
-                                <figure class="clearfix" data-toggle="modal" data-target="#myModalMaintenance">
-                                    <span class="blogimg">
+                            <li class="col-xs-6 col-sm-6 col-md-6">
+                                <figure class="clearfix row" data-toggle="modal" data-target="#myModalMaintenance">
+                                    <span class="blogimg col-md-3">
                                         <img src="{{ asset('images/00_footer/01howtobuy.png')}}" alt="">
                                     </span>
-                                    <span class="blogtitle">
+                                    <span class="blogtitle col-md-9">
                                         วิธีการสั่งหนังสือ
                                         <br>
                                         <!-- <small>
@@ -64,12 +64,12 @@
 
                                 </figure>
                             </li>
-                            <li >
-                                <figure class="clearfix" data-toggle="modal" data-target="#myModalShipment">
-                                    <span class="blogimg">
+                            <li class="col-xs-6 col-sm-6 col-md-6">
+                                <figure class="clearfix row" data-toggle="modal" data-target="#myModalShipment">
+                                    <span class="blogimg col-md-3">
                                         <img src="{{ asset('images/00_footer/02tuck.png')}}" alt="">
                                     </span>
-                                    <span class="blogtitle">
+                                    <span class="blogtitle col-md-9">
                                         วิธีจัดส่ง
                                         <br>
                                         <!-- <small>
@@ -78,12 +78,12 @@
                                     </span>
                                 </figure>
                             </li>
-                            <li >
-                                <figure class="clearfix" data-toggle="modal" data-target="#myModalPayment">
-                                    <span class="blogimg">
+                            <li class="col-xs-6 col-sm-6 col-md-6">
+                                <figure class="clearfix row" data-toggle="modal" data-target="#myModalPayment">
+                                    <span class="blogimg col-md-3">
                                         <img src="{{ asset('images/00_footer/03card.png')}}" alt="">
                                     </span>
-                                    <span class="blogtitle">
+                                    <span class="blogtitle col-md-9">
                                         แจ้งชำระเงิน
                                         <br>
                                         <!-- <small>
@@ -92,12 +92,12 @@
                                     </span>
                                 </figure>
                             </li>
-                            <li >
-                                <figure class="clearfix" data-toggle="modal" data-target="#myModalPoint">
-                                    <span class="blogimg">
+                            <li class="col-xs-6 col-sm-6 col-md-6">
+                                <figure class="clearfix row" data-toggle="modal" data-target="#myModalPoint">
+                                    <span class="blogimg col-md-3">
                                         <img src="{{ asset('images/00_footer/04score.png')}}" alt="">
                                     </span>
-                                    <span class="blogtitle">
+                                    <span class="blogtitle col-md-9">
                                         คะแนนสะสม
                                         <br>
                                         <!-- <small>
@@ -107,12 +107,12 @@
                                 </figure>
 
                             </li>
-                            <li >
-                                <figure class="clearfix" data-toggle="modal" data-target="#myModalReturn">
-                                    <span class="blogimg">
+                            <li class="col-xs-6 col-sm-6 col-md-6">
+                                <figure class="clearfix row" data-toggle="modal" data-target="#myModalReturn">
+                                    <span class="blogimg col-md-3">
                                         <img src="{{ asset('images/00_footer/returnbook.png')}}" alt="">
                                     </span>
-                                    <span class="blogtitle">
+                                    <span class="blogtitle col-md-9">
                                         นโยบายการคืนหนังสือ
                                         <br>
                                         <!-- <small>
